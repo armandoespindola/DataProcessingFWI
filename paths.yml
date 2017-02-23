@@ -43,6 +43,18 @@
                       files:
                         - windows_file: "windows.json"
 
+- measure:
+    subfolders:
+      - measure_paths:
+          path: "paths"
+          files:
+            - measure_path: "measure.{eventname}.{period_band}.path.json"
+      - measure_figures: "figures"
+      - measure_output:
+          path: "output"
+          files:
+            - measure_file: "measure.{eventname}.{period_band}.json"
+
 - seis:
     subfolders:
       - raw_obsd:

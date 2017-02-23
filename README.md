@@ -44,3 +44,16 @@ and then run the script
 	$ cd windows
 	$ ./select_windows.sh
 
+
+## Calculate measures
+
+
+Generate path files
+
+	$ python generate_path_files.py measure
+
+and then run the script
+
+	$ cd windows
+	$ ./run_measureadj.sh
+

@@ -156,6 +156,24 @@ def generate_windows():
             dump_json(data,
                       f("window_path", eventname, period_band))
 
+
+def generate_measure():
+    for eventname in events:
+        for period_band in settings["period_bands"]:
+            data = {
+                "figure_dir": d("measure_figures"),
+                "figure_mode": True,
+                "obsd_asdf": f("proc_obsd", eventname, period_band),
+                "obsd_tag": settings["proc_obsd_tag"],
+                "output_file": f("measure_file", eventname, period_band),
+                "synt_asdf": f("proc_synt", eventname, period_band),
+                "synt_tag": settings["proc_synt_tag"],
+                "window_file": f("windows_file", eventname, period_band)
+            }
+            dump_json(data,
+                      f("measure_path", eventname, period_band))
+
+
 if __name__ == '__main__':
     steps = dict([(x[9:], x) for x in locals().keys()
                   if x.startswith('generate_')])
