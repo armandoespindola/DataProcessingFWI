@@ -87,6 +87,29 @@
           files:
             - filter_path: "filter.{eventname}.{period_band}.path.json"
 
+- weights:
+    subfolders:
+      - weight_params:
+          path: "parfile"
+          files:
+            - weight_template: "template.window_weights.param.yml"
+            - weight_parfile: "window_weights.{eventname}.param.yml"
+      - weight_paths:
+          path: "paths"
+          files:
+            - weight_path: "window_weights.{eventname}.path.json"
+      - weight_output:
+          path: "output"
+          subfolders:
+            - weight_event:
+                path: "{eventname}"
+                subfolders:
+                  - weight_log:
+                      path: "log"
+                      files:
+                        - weight_log: "weight.log"
+                files:
+                  - weight_file: "window_weights.{period_band}.json"
 
 - seis:
     subfolders:

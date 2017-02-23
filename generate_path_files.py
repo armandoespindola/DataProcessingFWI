@@ -18,10 +18,29 @@ import json
 import yaml
 
 
+def load_json(filename):
+    with open(filename) as f:
+        data = json.load(f)
+    return data
+
+
+def dump_json(data, filename):
+    with open(filename, "w") as file_:
+        json.dump(data, file_, indent=2, sort_keys=True)
+    print("{} is written.".format(filename))
+
+
 def load_yaml(filename):
     with open(filename) as f:
         data = yaml.load(f)
     return data
+
+
+def dump_yaml(data, filename):
+    with open(filename, "w") as f:
+        data = yaml.dump(data, f, indent=2)
+    return data
+    print("{} is written.".format(filename))
 
 
 def load_events(filename):
@@ -76,12 +95,6 @@ def makedir(dirname):
         os.makedirs(dirname)
     except:
         pass
-
-
-def dump_json(data, filename):
-    with open(filename, "w") as file_:
-        json.dump(data, file_, indent=2, sort_keys=True)
-    print("{} is written.".format(filename))
 
 
 def f(name, eventname=None, period_band=None):
@@ -213,6 +226,49 @@ def generate_adjoint():
             dump_json(data,
                       f("adjoint_path", eventname, period_band))
 
+
+def count_windows(eventname):
+    measurements = {}
+    for period_band in settings["period_bands"]:
+        windows_file = f("windows_filter_file", eventname, period_band)
+        windows_data = load_json(windows_file)
+        measurements[period_band] = dict((x, 0) for x in ["BHR", "BHT", "BHZ"])
+        for station, components in windows_data.iteritems():
+            for component, windows in components.iteritems():
+                c = component.split(".")[-1]
+                measurements[period_band][c] += len(windows)
+    return measurements
+
+
+def get_ratio(eventname):
+    counts = count_windows(eventname)
+    for p in counts:
+        for c in counts[p]:
+            counts[p][c] = 1 / counts[p][c]
+    return counts
+
+
+def generate_weight_params():
+    template = load_yaml(f("weight_template"))
+    for eventname in events:
+        ratio = get_ratio(eventname)
+        data = template.copy()
+        data["category_weighting"]["ratio"] = ratio
+        dump_yaml(data, f("weight_parfile", eventname))
+
+
+def generate_weight_paths():
+    for eventname in events:
+        data = {"input": {},
+                "logfile": f("weight_log", eventname)}
+        for period_band in settings["period_bands"]:
+            data["input"][period_band] = {
+                "asdf_file": f("proc_synt", eventname, period_band),
+                "output_file": f("weight_file", eventname, period_band),
+                "station_file": f("stations_file", eventname),
+                "window_file": f("windows_filter_file", eventname, period_band)
+            }
+        dump_json(data, f("weight_path", eventname))
 
 if __name__ == '__main__':
     steps = dict([(x[9:], x) for x in locals().keys()

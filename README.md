@@ -83,3 +83,21 @@ and then run the script
 	$ cd filter
 	$ ./filter_windows.sh
 
+
+## Calculate weights
+
+
+Generate param files (We need to count windows to generate these)
+
+	$ python generate_path_files.py weight_params
+
+Generate path files
+
+	$ python generate_path_files.py weight_paths
+
+
+and then run the script
+
+	$ cd weights
+	$ ./calc_weights.sh
+
