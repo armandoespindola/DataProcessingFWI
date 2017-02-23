@@ -54,6 +54,19 @@ Generate path files
 
 and then run the script
 
-	$ cd windows
+	$ cd measures
 	$ ./run_measureadj.sh
+
+
+## Generate station.json files
+
+
+Generate path files
+
+	$ python generate_path_files.py stations
+
+and then run the script
+
+	$ cd stations
+	$ ./extract_stations.sh
 

@@ -55,6 +55,18 @@
           files:
             - measure_file: "measure.{eventname}.{period_band}.json"
 
+
+- stations:
+    subfolders:
+      - stations_paths:
+          path: "paths"
+          files:
+            - stations_path: "stations.{eventname}.path.json"
+      - stations_output:
+          path: "output"
+          files:
+            - stations_file: "{eventname}.json"
+
 - seis:
     subfolders:
       - raw_obsd:

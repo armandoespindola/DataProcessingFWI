@@ -174,6 +174,16 @@ def generate_measure():
                       f("measure_path", eventname, period_band))
 
 
+def generate_stations():
+    for eventname in events:
+        data = {
+            "input_asdf": f("raw_synt", eventname),
+            "outputfile": f("stations_file", eventname),
+        }
+        dump_json(data,
+                  f("stations_path", eventname))
+
+
 if __name__ == '__main__':
     steps = dict([(x[9:], x) for x in locals().keys()
                   if x.startswith('generate_')])
