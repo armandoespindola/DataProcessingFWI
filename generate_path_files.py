@@ -79,8 +79,8 @@ def makedir(dirname):
 
 
 def dump_json(data, filename):
-    with open(filename, "w") as f:
-        json.dump(data, f, indent=2, sort_keys=True)
+    with open(filename, "w") as file_:
+        json.dump(data, file_, indent=2, sort_keys=True)
     print("{} is written.".format(filename))
 
 
@@ -92,6 +92,16 @@ def f(name, eventname=None, period_band=None):
 def d(name, eventname=None, period_band=None):
     return folders[name].format(eventname=eventname,
                                 period_band=period_band)
+
+
+def generate_list_events():
+    for eventname in events:
+        print(eventname)
+
+
+def generate_list_period_bands():
+    for period_band in settings["period_bands"]:
+        print(period_band)
 
 
 def generate_folders():
@@ -115,15 +125,34 @@ def generate_converter():
                       f("{}_converter_path".format(seis_type), eventname))
 
 
+def generate_proc():
+    for eventname in events:
+        for period_band in settings["period_bands"]:
+            for seis_type in ["obsd", "synt"]:
+                data = {
+                    "input_asdf": f("raw_"+seis_type, eventname),
+                    "input_tag": settings["raw_{}_tag".format(seis_type)],
+                    "output_asdf": f("proc_"+seis_type,
+                                     eventname, period_band),
+                    "output_tag": settings["proc_{}_tag".format(seis_type)]
+                }
+                dump_json(data, f("{}_proc_path".format(seis_type),
+                                  eventname, period_band))
+
+
 if __name__ == '__main__':
-    folders, files = load_path_config("paths.yml")
-    settings = load_yaml("settings.yml")
-    events = load_events("event_list")
     steps = dict([(x[9:], x) for x in locals().keys()
                   if x.startswith('generate_')])
     parser = argparse.ArgumentParser(
         description='Generate path files')
+    parser.add_argument('-p', '--paths-file', default="paths.yml")
+    parser.add_argument('-s', '--settings-file', default="settings.yml")
+    parser.add_argument('-e', '--events-file', default="event_list")
     parser.add_argument("step",  help="file to generate",
                         choices=steps.keys())
     args = parser.parse_args()
+    folders, files = load_path_config(args.paths_file)
+    settings = load_yaml(args.settings_file)
+    events = load_events(args.events_file)
+
     locals()[steps[args.step]]()

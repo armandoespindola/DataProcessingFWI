@@ -18,6 +18,14 @@
             - obsd_converter_path: "obsd2asdf.{eventname}.path.json"
             - synt_converter_path: "synt2asdf.{eventname}.path.json"
 
+- proc:
+    subfolders:
+      - proc_paths:
+          path: "paths"
+          files:
+            - obsd_proc_path: "proc_obsd.{eventname}.{period_band}.path.json"
+            - synt_proc_path: "proc_synt.{eventname}.{period_band}.path.json"
+
 - seis:
     subfolders:
       - raw_obsd:
