@@ -101,3 +101,15 @@ and then run the script
 	$ cd weights
 	$ ./calc_weights.sh
 
+
+## Sum adjoint sources
+
+
+Generate path files
+
+	$ python generate_path_files.py sum
+
+and then run the script
+
+	$ cd sum_adjoint
+	$ ./sum_adjoint.sh

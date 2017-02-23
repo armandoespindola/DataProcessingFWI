@@ -111,6 +111,17 @@
                 files:
                   - weight_file: "window_weights.{period_band}.json"
 
+- sum_adjoint:
+    subfolders:
+      - sum_adjoint_output:
+          path: "output"
+          files:
+            - sum_adjoint_file: "adjoint_sum.{eventname}.h5"
+      - sum_adjoint_paths:
+          path: "paths"
+          files:
+            - sum_adjoint_path: "adjoint_sum.{eventname}.path.json"
+
 - seis:
     subfolders:
       - raw_obsd:

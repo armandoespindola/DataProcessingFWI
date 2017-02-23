@@ -270,6 +270,19 @@ def generate_weight_paths():
             }
         dump_json(data, f("weight_path", eventname))
 
+
+def generate_sum():
+    for eventname in events:
+        data = {"input_file": {},
+                "output_file": f("sum_adjoint_file", eventname)}
+        for period_band in settings["period_bands"]:
+            data["input_file"][period_band] = {
+                "asdf_file": f("adjoint_file", eventname, period_band),
+                "weight_file": f("weight_file", eventname, period_band),
+            }
+        dump_json(data, f("sum_adjoint_path", eventname))
+
+
 if __name__ == '__main__':
     steps = dict([(x[9:], x) for x in locals().keys()
                   if x.startswith('generate_')])
