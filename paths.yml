@@ -26,6 +26,23 @@
             - obsd_proc_path: "proc_obsd.{eventname}.{period_band}.path.json"
             - synt_proc_path: "proc_synt.{eventname}.{period_band}.path.json"
 
+- windows:
+    subfolders:
+      - window_paths:
+          path: "paths"
+          files:
+            - window_path: "windows.{eventname}.{period_band}.path.json"
+      - windows_output:
+          path: "output"
+          subfolders:
+            - win_event:
+                path: "{eventname}"
+                subfolders:
+                  - win_event_period:
+                      path: "{period_band}"
+                      files:
+                        - windows_file: "windows.json"
+
 - seis:
     subfolders:
       - raw_obsd:

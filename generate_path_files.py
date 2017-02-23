@@ -106,8 +106,10 @@ def generate_list_period_bands():
 
 def generate_folders():
     for eventname in events:
-        for name, path in folders.iteritems():
-            makedir(path.format(eventname=eventname))
+        for period_band in settings["period_bands"]:
+            for name, path in folders.iteritems():
+                makedir(path.format(eventname=eventname,
+                                    period_band=period_band))
 
 
 def generate_converter():
@@ -139,6 +141,20 @@ def generate_proc():
                 dump_json(data, f("{}_proc_path".format(seis_type),
                                   eventname, period_band))
 
+
+def generate_windows():
+    for eventname in events:
+        for period_band in settings["period_bands"]:
+            data = {
+                "figure_mode": True,
+                "obsd_asdf": f("proc_obsd", eventname, period_band),
+                "obsd_tag": settings["proc_obsd_tag"],
+                "output_file": f("windows_file", eventname, period_band),
+                "synt_asdf": f("proc_synt", eventname, period_band),
+                "synt_tag": settings["proc_synt_tag"]
+            }
+            dump_json(data,
+                      f("window_path", eventname, period_band))
 
 if __name__ == '__main__':
     steps = dict([(x[9:], x) for x in locals().keys()
