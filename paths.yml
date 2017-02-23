@@ -1,0 +1,38 @@
+- input_data:
+    subfolders:
+      - sacdata:
+          path: "sacdata/{eventname}"
+          subfolders:
+            - synt_sac: "synt"
+            - obsd_sac: "obsd"
+      - staxml: "staxml/{eventname}"
+      - quakeml:
+          files:
+            - quakeml: "{eventname}.xml"
+
+- converter:
+    subfolders:
+      - converter_paths:
+          path: "paths"
+          files:
+            - obsd_converter_path: "obsd2asdf.{eventname}.path.json"
+            - synt_converter_path: "synt2asdf.{eventname}.path.json"
+
+- seis:
+    subfolders:
+      - raw_obsd:
+          path: "raw"
+          files:
+            - raw_obsd: "{eventname}.obsd.h5"
+      - raw_synt:
+          path: "raw"
+          files:
+            - raw_synt: "{eventname}.synt.h5"
+      - proc_obsd:
+          path: "proc"
+          files:
+            - proc_obsd: "{eventname}.{period_band}.proc_obsd.h5"
+      - proc_synt:
+          path: "proc"
+          files:
+            - proc_synt: "{eventname}.{period_band}.proc_synt.h5"

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<q:quakeml xmlns:q="http://quakeml.org/xmlns/quakeml/1.2" xmlns="http://quakeml.org/xmlns/bed/1.2">
+  <eventParameters publicID="smi:local/cmtsolution/catalog/d5f2b111-0315-4211-9169-bb25893d4225">
+    <event publicID="smi:local/cmtsolution/200808251322A/event">
+      <preferredOriginID>smi:local/cmtsolution/200808251322A/origin#cmt</preferredOriginID>
+      <preferredMagnitudeID>smi:local/cmtsolution/200808251322A/magnitude#mw</preferredMagnitudeID>
+      <preferredFocalMechanismID>smi:local/cmtsolution/200808251322A/focal_mechanism</preferredFocalMechanismID>
+      <type>earthquake</type>
+      <description>
+        <text>200808251322A</text>
+        <type>earthquake name</type>
+      </description>
+      <comment>
+        <text>Hypocenter catalog: PDE</text>
+      </comment>
+      <origin publicID="smi:local/cmtsolution/200808251322A/origin#cmt">
+        <time>
+          <value>2008-08-25T13:22:08.530000Z</value>
+        </time>
+        <latitude>
+          <value>30.6057</value>
+        </latitude>
+        <longitude>
+          <value>83.4996</value>
+        </longitude>
+        <depth>
+          <value>12711.4</value>
+        </depth>
+        <type>centroid</type>
+      </origin>
+      <origin publicID="smi:local/cmtsolution/200808251322A/origin#prelim">
+        <time>
+          <value>2008-08-25T13:21:58.800000Z</value>
+        </time>
+        <latitude>
+          <value>30.9</value>
+        </latitude>
+        <longitude>
+          <value>83.52</value>
+        </longitude>
+        <depth>
+          <value>12000.0</value>
+        </depth>
+        <type>hypocenter</type>
+        <evaluationStatus>preliminary</evaluationStatus>
+      </origin>
+      <magnitude publicID="smi:local/cmtsolution/200808251322A/magnitude#mw">
+        <mag>
+          <value>6.62</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:local/cmtsolution/200808251322A/origin#cmt</originID>
+      </magnitude>
+      <magnitude publicID="smi:local/cmtsolution/200808251322A/magnitude#prelim_bw">
+        <mag>
+          <value>6.2</value>
+        </mag>
+        <type>Mb</type>
+        <originID>smi:local/cmtsolution/200808251322A/origin#prelim</originID>
+        <evaluationStatus>preliminary</evaluationStatus>
+      </magnitude>
+      <magnitude publicID="smi:local/cmtsolution/200808251322A/magnitude#prelim_sw">
+        <mag>
+          <value>6.7</value>
+        </mag>
+        <type>MS</type>
+        <originID>smi:local/cmtsolution/200808251322A/origin#prelim</originID>
+        <evaluationStatus>preliminary</evaluationStatus>
+      </magnitude>
+      <focalMechanism publicID="smi:local/cmtsolution/200808251322A/focal_mechanism">
+        <triggeringOriginID>smi:local/cmtsolution/200808251322A/origin#prelim</triggeringOriginID>
+        <momentTensor publicID="smi:local/cmtsolution/200808251322A/moment_tensor">
+          <derivedOriginID>smi:local/cmtsolution/200808251322A/origin#cmt</derivedOriginID>
+          <momentMagnitudeID>smi:local/cmtsolution/200808251322A/magnitude#mw</momentMagnitudeID>
+          <scalarMoment>
+            <value>1.06314758326e+19</value>
+          </scalarMoment>
+          <tensor>
+            <Mrr>
+              <value>-7.79365e+18</value>
+            </Mrr>
+            <Mtt>
+              <value>-2.69384e+18</value>
+            </Mtt>
+            <Mpp>
+              <value>1.04875e+19</value>
+            </Mpp>
+            <Mrt>
+              <value>-4.58202e+18</value>
+            </Mrt>
+            <Mrp>
+              <value>1.49951e+18</value>
+            </Mrp>
+            <Mtp>
+              <value>8.9002e+17</value>
+            </Mtp>
+          </tensor>
+          <sourceTimeFunction>
+            <type>triangle</type>
+            <duration>10.8</duration>
+          </sourceTimeFunction>
+        </momentTensor>
+      </focalMechanism>
+    </event>
+  </eventParameters>
+</q:quakeml>

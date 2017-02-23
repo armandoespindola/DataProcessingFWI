@@ -1,0 +1,3006 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<FDSNStationXML xmlns:iris="http://www.fdsn.org/xml/station/1/iris" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.0" xsi:schemaLocation="http://www.fdsn.org/xml/station/1 http://www.fdsn.org/xml/station/fdsn-station-1.0.xsd">
+ <Source>IRIS-DMC</Source>
+ <Sender>IRIS-DMC</Sender>
+ <Module>IRIS WEB SERVICE: fdsnws-station | version: 1.1.10</Module>
+ <ModuleURI>http://service.iris.edu/fdsnws/station/1/query?network=II&amp;level=response&amp;station=ARU&amp;location=%2A&amp;starttime=2008-08-22T07%3A45%3A00.000000&amp;endtime=2008-08-22T12%3A45%3A00.000000&amp;channel=BH%3F%2CLH%3F</ModuleURI>
+ <Created>2015-03-17T02:54:38</Created>
+ <Network code="II" startDate="1986-01-01T00:00:00" endDate="2500-12-31T23:59:59" restrictedStatus="open">
+  <Description>Global Seismograph Network (GSN - IRIS/IDA)</Description>
+  <TotalNumberStations>50</TotalNumberStations>
+  <SelectedNumberStations>1</SelectedNumberStations>
+  <Station code="ARU" startDate="1988-09-14T00:00:00" endDate="2009-09-28T00:00:00" restrictedStatus="open" iris:alternateNetworkCodes="_FDSN,_FDSN-ALL,_GSN,_GSN-BROADBAND,_REALTIME,_STS-1,.UNRESTRICTED">
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1991-07-20T14:46:11</BeginEffectiveTime>
+    <EndEffectiveTime>1991-07-21T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1991-07-31T14:59:57</BeginEffectiveTime>
+    <EndEffectiveTime>1991-08-01T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1991-08-03T17:47:03</BeginEffectiveTime>
+    <EndEffectiveTime>1991-08-03T21:25:04</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1991-08-26T23:25:51</BeginEffectiveTime>
+    <EndEffectiveTime>1991-08-27T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1991-10-16T16:34:51</BeginEffectiveTime>
+    <EndEffectiveTime>1991-10-17T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1991-11-26T20:58:49</BeginEffectiveTime>
+    <EndEffectiveTime>1991-11-26T22:13:37</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1991-12-07T07:32:21</BeginEffectiveTime>
+    <EndEffectiveTime>1991-12-07T08:11:06</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1992-03-27T01:31:09</BeginEffectiveTime>
+    <EndEffectiveTime>1992-03-27T04:47:35</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1992-03-27T18:52:44</BeginEffectiveTime>
+    <EndEffectiveTime>1992-03-27T22:08:34</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1992-04-06T17:06:12</BeginEffectiveTime>
+    <EndEffectiveTime>1992-04-07T02:31:30</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1992-04-10T04:57:40</BeginEffectiveTime>
+    <EndEffectiveTime>1992-04-10T09:07:28</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1992-08-27T20:24:14</BeginEffectiveTime>
+    <EndEffectiveTime>1992-08-28T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1992-08-30T17:28:27</BeginEffectiveTime>
+    <EndEffectiveTime>1992-08-30T21:04:00</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1992-08-31T09:48:37</BeginEffectiveTime>
+    <EndEffectiveTime>1992-08-31T20:04:13</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1992-09-04T01:46:42</BeginEffectiveTime>
+    <EndEffectiveTime>1992-09-04T09:02:58</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1992-09-11T03:42:46</BeginEffectiveTime>
+    <EndEffectiveTime>1992-09-11T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-03-17T16:05:14</BeginEffectiveTime>
+    <EndEffectiveTime>1993-03-18T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-03-19T23:57:06</BeginEffectiveTime>
+    <EndEffectiveTime>1993-03-21T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-03-26T01:43:35</BeginEffectiveTime>
+    <EndEffectiveTime>1993-03-26T07:07:21</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-03-27T18:53:40</BeginEffectiveTime>
+    <EndEffectiveTime>1993-03-28T11:05:18</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-04-06T21:23:10</BeginEffectiveTime>
+    <EndEffectiveTime>1993-04-07T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-04-08T01:01:18</BeginEffectiveTime>
+    <EndEffectiveTime>1993-04-08T02:54:33</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-04-09T01:01:10</BeginEffectiveTime>
+    <EndEffectiveTime>1993-04-09T04:08:12</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-04-14T21:42:57</BeginEffectiveTime>
+    <EndEffectiveTime>1993-04-15T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-04-21T23:07:17</BeginEffectiveTime>
+    <EndEffectiveTime>1993-04-22T00:05:30</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-04-30T15:04:29</BeginEffectiveTime>
+    <EndEffectiveTime>1993-05-01T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-05-03T11:43:37</BeginEffectiveTime>
+    <EndEffectiveTime>1993-05-03T17:44:09</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-05-17T23:13:33</BeginEffectiveTime>
+    <EndEffectiveTime>1993-05-18T05:06:28</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-05-18T15:18:17</BeginEffectiveTime>
+    <EndEffectiveTime>1993-05-19T05:48:02</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-05-21T08:15:21</BeginEffectiveTime>
+    <EndEffectiveTime>1993-05-21T09:39:01</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-05-24T17:45:21</BeginEffectiveTime>
+    <EndEffectiveTime>1993-05-26T00:00:00</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-05-28T16:11:00</BeginEffectiveTime>
+    <EndEffectiveTime>1993-05-29T09:16:28</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-06-08T17:40:51</BeginEffectiveTime>
+    <EndEffectiveTime>1993-06-09T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-07-11T10:07:23</BeginEffectiveTime>
+    <EndEffectiveTime>1993-07-11T13:22:21</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-07-11T15:50:32</BeginEffectiveTime>
+    <EndEffectiveTime>1993-07-12T01:40:50</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-07-16T03:04:29</BeginEffectiveTime>
+    <EndEffectiveTime>1993-07-17T04:23:11</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-07-17T15:32:54</BeginEffectiveTime>
+    <EndEffectiveTime>1993-07-17T19:42:35</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-07-22T07:47:00</BeginEffectiveTime>
+    <EndEffectiveTime>1993-07-26T03:15:24</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-08-17T03:10:24</BeginEffectiveTime>
+    <EndEffectiveTime>1993-08-17T14:50:02</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-08-18T06:10:49</BeginEffectiveTime>
+    <EndEffectiveTime>1993-08-18T08:17:16</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-08-18T09:33:41</BeginEffectiveTime>
+    <EndEffectiveTime>1993-08-18T23:04:19</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-08-19T00:40:51</BeginEffectiveTime>
+    <EndEffectiveTime>1993-08-19T11:01:56</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1993-10-28T17:05:39</BeginEffectiveTime>
+    <EndEffectiveTime>1993-10-28T17:14:31</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1997-10-02T02:03:29</BeginEffectiveTime>
+    <EndEffectiveTime>1997-10-18T09:56:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1997-10-18T16:41:39</BeginEffectiveTime>
+    <EndEffectiveTime>1997-12-21T17:20:31</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>1997-12-22T21:23:21</BeginEffectiveTime>
+    <EndEffectiveTime>1998-01-28T23:07:30</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Station has clock problems.</Value>
+    <BeginEffectiveTime>1997-10-02T02:03:29</BeginEffectiveTime>
+    <EndEffectiveTime>1997-10-18T09:56:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Station has clock problems.</Value>
+    <BeginEffectiveTime>1997-10-18T16:41:39</BeginEffectiveTime>
+    <EndEffectiveTime>1997-12-21T17:20:31</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Station has clock problems.</Value>
+    <BeginEffectiveTime>1997-12-22T21:23:21</BeginEffectiveTime>
+    <EndEffectiveTime>1998-01-28T23:07:30</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-03-23T16:45:21</BeginEffectiveTime>
+    <EndEffectiveTime>1989-03-24T03:57:18</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-03-24T11:12:37</BeginEffectiveTime>
+    <EndEffectiveTime>1989-03-30T02:47:44</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-03-30T03:08:46</BeginEffectiveTime>
+    <EndEffectiveTime>1989-04-02T02:49:15</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-04-02T03:08:39</BeginEffectiveTime>
+    <EndEffectiveTime>1989-04-02T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-06-21T03:48:25</BeginEffectiveTime>
+    <EndEffectiveTime>1989-06-24T02:51:28</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-06-27T02:33:09</BeginEffectiveTime>
+    <EndEffectiveTime>1989-06-28T14:36:36</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-06-29T02:18:15</BeginEffectiveTime>
+    <EndEffectiveTime>1989-07-02T11:26:50</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-07-03T02:06:50</BeginEffectiveTime>
+    <EndEffectiveTime>1989-07-04T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-08-07T02:56:42</BeginEffectiveTime>
+    <EndEffectiveTime>1989-08-11T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-09-07T02:59:26</BeginEffectiveTime>
+    <EndEffectiveTime>1989-09-08T02:42:01</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-09-08T03:13:19</BeginEffectiveTime>
+    <EndEffectiveTime>1989-09-11T08:40:24</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-09-11T09:30:25</BeginEffectiveTime>
+    <EndEffectiveTime>1989-09-11T15:44:34</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1989-10-20T12:18:10</BeginEffectiveTime>
+    <EndEffectiveTime>1989-10-21T02:43:18</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-02-19T08:14:56</BeginEffectiveTime>
+    <EndEffectiveTime>1990-02-21T10:31:55</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-02-21T11:12:09</BeginEffectiveTime>
+    <EndEffectiveTime>1990-02-22T04:17:21</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-02-26T03:11:21</BeginEffectiveTime>
+    <EndEffectiveTime>1990-02-26T07:56:47</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-02-26T09:08:58</BeginEffectiveTime>
+    <EndEffectiveTime>1990-03-02T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-05-11T10:41:59</BeginEffectiveTime>
+    <EndEffectiveTime>1990-05-11T12:59:23</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-05-12T01:50:13</BeginEffectiveTime>
+    <EndEffectiveTime>1990-05-12T06:21:10</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-05-12T13:40:39</BeginEffectiveTime>
+    <EndEffectiveTime>1990-05-12T18:38:29</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-05-13T02:14:15</BeginEffectiveTime>
+    <EndEffectiveTime>1990-05-13T23:38:33</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-05-14T02:19:51</BeginEffectiveTime>
+    <EndEffectiveTime>1990-05-17T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-06-11T02:42:56</BeginEffectiveTime>
+    <EndEffectiveTime>1990-06-14T07:41:50</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-06-14T10:08:40</BeginEffectiveTime>
+    <EndEffectiveTime>1990-06-15T03:29:42</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-06-15T04:02:41</BeginEffectiveTime>
+    <EndEffectiveTime>1990-06-15T07:22:06</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-07-12T02:38:50</BeginEffectiveTime>
+    <EndEffectiveTime>1990-07-13T10:05:31</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1990-07-13T10:23:12</BeginEffectiveTime>
+    <EndEffectiveTime>1990-07-17T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1991-03-19T03:43:28</BeginEffectiveTime>
+    <EndEffectiveTime>1991-03-23T07:14:48</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1991-03-23T15:14:31</BeginEffectiveTime>
+    <EndEffectiveTime>1991-03-24T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1991-07-20T14:46:11</BeginEffectiveTime>
+    <EndEffectiveTime>1991-07-21T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1991-08-07T16:22:05</BeginEffectiveTime>
+    <EndEffectiveTime>1991-08-07T18:19:05</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1991-08-08T10:32:42</BeginEffectiveTime>
+    <EndEffectiveTime>1991-08-08T11:34:17</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1991-08-09T13:36:40</BeginEffectiveTime>
+    <EndEffectiveTime>1991-08-09T14:53:12</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1991-08-09T22:03:53</BeginEffectiveTime>
+    <EndEffectiveTime>1991-08-10T00:48:06</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1991-08-26T23:25:51</BeginEffectiveTime>
+    <EndEffectiveTime>1991-08-27T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1991-09-03T17:07:42</BeginEffectiveTime>
+    <EndEffectiveTime>1991-09-04T04:56:22</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1991-12-07T04:36:37</BeginEffectiveTime>
+    <EndEffectiveTime>1991-12-07T07:32:49</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1992-08-17T06:01:26</BeginEffectiveTime>
+    <EndEffectiveTime>1992-08-18T02:37:37</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1992-08-19T03:49:35</BeginEffectiveTime>
+    <EndEffectiveTime>1992-08-19T08:06:36</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1992-09-17T00:36:24</BeginEffectiveTime>
+    <EndEffectiveTime>1992-09-17T03:30:37</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1993-05-11T14:35:36</BeginEffectiveTime>
+    <EndEffectiveTime>1993-05-12T00:32:43</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1993-06-21T04:05:39</BeginEffectiveTime>
+    <EndEffectiveTime>1993-06-21T10:39:14</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1993-07-03T03:47:15</BeginEffectiveTime>
+    <EndEffectiveTime>1993-07-03T04:11:55</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1993-07-12T03:00:03</BeginEffectiveTime>
+    <EndEffectiveTime>1993-07-15T09:36:05</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1993-08-17T03:10:24</BeginEffectiveTime>
+    <EndEffectiveTime>1993-08-19T11:01:56</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1993-08-20T03:14:36</BeginEffectiveTime>
+    <EndEffectiveTime>1993-08-26T16:00:07</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1993-08-27T03:08:02</BeginEffectiveTime>
+    <EndEffectiveTime>1993-08-27T07:03:01</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1993-08-28T04:53:38</BeginEffectiveTime>
+    <EndEffectiveTime>1993-08-28T10:19:31</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1993-09-09T03:44:13</BeginEffectiveTime>
+    <EndEffectiveTime>1993-09-09T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>time uncertain.</Value>
+    <BeginEffectiveTime>1993-10-28T17:05:39</BeginEffectiveTime>
+    <EndEffectiveTime>1993-10-28T17:14:31</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Day contains positive leap second (86401 s/day).</Value>
+    <BeginEffectiveTime>1997-06-30T00:00:00</BeginEffectiveTime>
+    <EndEffectiveTime>1997-07-01T00:00:00</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Day contains positive leap second (86401 s/day).</Value>
+    <BeginEffectiveTime>1998-12-31T06:46:29</BeginEffectiveTime>
+    <EndEffectiveTime>1999-01-01T00:00:00</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Time may be in error by several seconds.</Value>
+    <BeginEffectiveTime>1993-08-17T03:10:24</BeginEffectiveTime>
+    <EndEffectiveTime>1993-08-19T11:01:56</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Time may be in error by several seconds.</Value>
+    <BeginEffectiveTime>1993-08-20T03:14:36</BeginEffectiveTime>
+    <EndEffectiveTime>1993-08-26T16:00:07</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Time may be in error by several seconds.</Value>
+    <BeginEffectiveTime>1993-08-27T03:08:02</BeginEffectiveTime>
+    <EndEffectiveTime>1993-08-27T07:03:01</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Time may be in error by several seconds.</Value>
+    <BeginEffectiveTime>1993-08-28T04:53:38</BeginEffectiveTime>
+    <EndEffectiveTime>1993-08-28T10:19:31</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Time may be in error from 0 upto 1 second.</Value>
+    <BeginEffectiveTime>1993-07-11T15:50:32</BeginEffectiveTime>
+    <EndEffectiveTime>1993-07-12T01:40:50</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Time may be in error from 0 upto 1 second.</Value>
+    <BeginEffectiveTime>1993-07-12T03:00:03</BeginEffectiveTime>
+    <EndEffectiveTime>1993-07-15T09:36:05</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Time may be in error from 0 upto 1 second.</Value>
+    <BeginEffectiveTime>1993-07-16T03:04:29</BeginEffectiveTime>
+    <EndEffectiveTime>1993-07-17T04:23:11</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Time may be in error from 0 upto 1 second.</Value>
+    <BeginEffectiveTime>1993-07-21T10:38:36</BeginEffectiveTime>
+    <EndEffectiveTime>1993-07-22T05:34:45</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Time may be in error from 0 upto 1 second.</Value>
+    <BeginEffectiveTime>1993-07-22T07:47:00</BeginEffectiveTime>
+    <EndEffectiveTime>1993-07-24T23:59:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>No time error information is available.</Value>
+    <BeginEffectiveTime>1993-11-22T00:46:33</BeginEffectiveTime>
+    <EndEffectiveTime>1993-11-28T08:21:45</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>No time error information is available.</Value>
+    <BeginEffectiveTime>1993-11-29T00:12:57</BeginEffectiveTime>
+    <EndEffectiveTime>1993-12-13T00:32:09</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>No time error information is available.</Value>
+    <BeginEffectiveTime>1995-01-19T06:44:48</BeginEffectiveTime>
+    <EndEffectiveTime>1995-01-21T10:44:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>No time error information is available.</Value>
+    <BeginEffectiveTime>1995-02-11T23:59:52</BeginEffectiveTime>
+    <EndEffectiveTime>1995-02-14T05:39:22</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>No time error information is available.</Value>
+    <BeginEffectiveTime>1995-02-15T08:59:42</BeginEffectiveTime>
+    <EndEffectiveTime>1995-02-15T15:14:59</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Problems with station recorder.</Value>
+    <BeginEffectiveTime>1993-11-22T00:46:33</BeginEffectiveTime>
+    <EndEffectiveTime>1993-11-28T08:21:45</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Problems with station recorder.</Value>
+    <BeginEffectiveTime>1993-11-29T00:12:57</BeginEffectiveTime>
+    <EndEffectiveTime>1993-12-13T00:32:09</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>No time error information is available.</Value>
+    <BeginEffectiveTime>1995-02-12T00:00:00</BeginEffectiveTime>
+    <EndEffectiveTime>1995-02-14T05:39:22</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Clock unlocked.</Value>
+    <BeginEffectiveTime>2001-10-17T08:46:13</BeginEffectiveTime>
+    <EndEffectiveTime>2001-10-17T08:59:48</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Station has clock problems.</Value>
+    <BeginEffectiveTime>2001-10-17T08:46:13</BeginEffectiveTime>
+    <EndEffectiveTime>2001-10-17T08:59:48</EndEffectiveTime>
+   </Comment>
+   <Comment>
+    <Value>Time may be in error by several seconds.</Value>
+    <BeginEffectiveTime>2001-10-17T08:46:13</BeginEffectiveTime>
+    <EndEffectiveTime>2001-10-17T08:59:48</EndEffectiveTime>
+   </Comment>
+   <Latitude>56.4302</Latitude>
+   <Longitude>58.5625</Longitude>
+   <Elevation>250.0</Elevation>
+   <Site>
+    <Name>Arti, Russia</Name>
+   </Site>
+   <CreationDate>1988-09-14T00:00:00</CreationDate>
+   <TotalNumberChannels>101</TotalNumberChannels>
+   <SelectedNumberChannels>6</SelectedNumberChannels>
+   <Channel locationCode="00" startDate="2003-04-22T07:39:00" restrictedStatus="open" endDate="2009-09-27T23:59:59" code="BHE">
+    <Comment>
+     <Value>S/N #18777</Value>
+    </Comment>
+    <Latitude>56.4302</Latitude>
+    <Longitude>58.5625</Longitude>
+    <Elevation>250.0</Elevation>
+    <Depth>0.0</Depth>
+    <Azimuth>90.0</Azimuth>
+    <Dip>0.0</Dip>
+    <Type>CONTINUOUS</Type>
+    <Type>GEOPHYSICAL</Type>
+    <SampleRate>20.0</SampleRate>
+    <ClockDrift>2.5E-6</ClockDrift>
+    <CalibrationUnits>
+     <Name>V</Name>
+     <Description>Volts</Description>
+    </CalibrationUnits>
+    <Sensor>
+     <Type>Streckeisen STS-1H/VBB Seismometer</Type>
+    </Sensor>
+    <Response>
+     <InstrumentSensitivity>
+      <Value>1.69274E9</Value>
+      <Frequency>0.05</Frequency>
+      <InputUnits>
+       <Name>M/S</Name>
+       <Description>Velocity in Meters Per Second</Description>
+      </InputUnits>
+      <OutputUnits>
+       <Name>COUNTS</Name>
+       <Description>Digital Counts</Description>
+      </OutputUnits>
+     </InstrumentSensitivity>
+     <Stage number="1">
+      <PolesZeros>
+       <InputUnits>
+        <Name>M/S</Name>
+        <Description>Velocity in Meters Per Second</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (HERTZ)</PzTransferFunctionType>
+       <NormalizationFactor>817.326</NormalizationFactor>
+       <NormalizationFrequency>0.05</NormalizationFrequency>
+       <Zero number="0">
+        <Real plusError="0" minusError="0">0</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="1">
+        <Real plusError="0" minusError="0">0</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="2">
+        <Real plusError="0" minusError="0">-12.5</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="3">
+        <Real plusError="0" minusError="0">-0.0242718</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="4">
+        <Real plusError="0" minusError="0">-0.0242718</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Pole number="0">
+        <Real plusError="0" minusError="0">-0.00195582</Real>
+        <Imaginary plusError="0" minusError="0">0.00196251</Imaginary>
+       </Pole>
+       <Pole number="1">
+        <Real plusError="0" minusError="0">-0.00195582</Real>
+        <Imaginary plusError="0" minusError="0">-0.00196251</Imaginary>
+       </Pole>
+       <Pole number="2">
+        <Real plusError="0" minusError="0">-0.0243066</Real>
+        <Imaginary plusError="0" minusError="0">0.00108784</Imaginary>
+       </Pole>
+       <Pole number="3">
+        <Real plusError="0" minusError="0">-0.0243066</Real>
+        <Imaginary plusError="0" minusError="0">-0.00108784</Imaginary>
+       </Pole>
+       <Pole number="4">
+        <Real plusError="0" minusError="0">-6.37525</Real>
+        <Imaginary plusError="0" minusError="0">7.7043</Imaginary>
+       </Pole>
+       <Pole number="5">
+        <Real plusError="0" minusError="0">-6.37525</Real>
+        <Imaginary plusError="0" minusError="0">-7.7043</Imaginary>
+       </Pole>
+       <Pole number="6">
+        <Real plusError="0" minusError="0">-5.39926</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="7">
+        <Real plusError="0" minusError="0">-18.9158</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+      </PolesZeros>
+      <StageGain>
+       <Value>2418.0</Value>
+       <Frequency>0.05</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="2">
+      <PolesZeros>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (HERTZ)</PzTransferFunctionType>
+       <NormalizationFactor>1.0</NormalizationFactor>
+       <NormalizationFrequency>0.05</NormalizationFrequency>
+      </PolesZeros>
+      <StageGain>
+       <Value>0.473013</Value>
+       <Frequency>0.05</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="3">
+      <Coefficients>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>100.0</InputSampleRate>
+       <Factor>1</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1480000.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="4">
+      <Coefficients>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.113</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>100.0</InputSampleRate>
+       <Factor>5</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+    </Response>
+   </Channel>
+   <Channel locationCode="00" startDate="2003-04-22T07:39:00" restrictedStatus="open" endDate="2009-09-27T23:59:59" code="BHN">
+    <Comment>
+     <Value>S/N #18778</Value>
+    </Comment>
+    <Latitude>56.4302</Latitude>
+    <Longitude>58.5625</Longitude>
+    <Elevation>250.0</Elevation>
+    <Depth>0.0</Depth>
+    <Azimuth>0.0</Azimuth>
+    <Dip>0.0</Dip>
+    <Type>CONTINUOUS</Type>
+    <Type>GEOPHYSICAL</Type>
+    <SampleRate>20.0</SampleRate>
+    <ClockDrift>2.5E-6</ClockDrift>
+    <CalibrationUnits>
+     <Name>V</Name>
+     <Description>Volts</Description>
+    </CalibrationUnits>
+    <Sensor>
+     <Type>Streckeisen STS-1H/VBB Seismometer</Type>
+    </Sensor>
+    <Response>
+     <InstrumentSensitivity>
+      <Value>1.71591E9</Value>
+      <Frequency>0.05</Frequency>
+      <InputUnits>
+       <Name>M/S</Name>
+       <Description>Velocity in Meters Per Second</Description>
+      </InputUnits>
+      <OutputUnits>
+       <Name>COUNTS</Name>
+       <Description>Digital Counts</Description>
+      </OutputUnits>
+     </InstrumentSensitivity>
+     <Stage number="1">
+      <PolesZeros>
+       <InputUnits>
+        <Name>M/S</Name>
+        <Description>Velocity in Meters Per Second</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (HERTZ)</PzTransferFunctionType>
+       <NormalizationFactor>818.212</NormalizationFactor>
+       <NormalizationFrequency>0.05</NormalizationFrequency>
+       <Zero number="0">
+        <Real plusError="0" minusError="0">0</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="1">
+        <Real plusError="0" minusError="0">0</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="2">
+        <Real plusError="0" minusError="0">-12.5</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="3">
+        <Real plusError="0" minusError="0">-0.0242718</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="4">
+        <Real plusError="0" minusError="0">-0.0242718</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Pole number="0">
+        <Real plusError="0" minusError="0">-0.00196763</Real>
+        <Imaginary plusError="0" minusError="0">0.00195101</Imaginary>
+       </Pole>
+       <Pole number="1">
+        <Real plusError="0" minusError="0">-0.00196763</Real>
+        <Imaginary plusError="0" minusError="0">-0.00195101</Imaginary>
+       </Pole>
+       <Pole number="2">
+        <Real plusError="0" minusError="0">-0.0231941</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="3">
+        <Real plusError="0" minusError="0">-0.025475</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="4">
+        <Real plusError="0" minusError="0">-6.37525</Real>
+        <Imaginary plusError="0" minusError="0">7.7043</Imaginary>
+       </Pole>
+       <Pole number="5">
+        <Real plusError="0" minusError="0">-6.37525</Real>
+        <Imaginary plusError="0" minusError="0">-7.7043</Imaginary>
+       </Pole>
+       <Pole number="6">
+        <Real plusError="0" minusError="0">-5.39926</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="7">
+        <Real plusError="0" minusError="0">-18.9158</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+      </PolesZeros>
+      <StageGain>
+       <Value>2448.0</Value>
+       <Frequency>0.05</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="2">
+      <PolesZeros>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (HERTZ)</PzTransferFunctionType>
+       <NormalizationFactor>1.0</NormalizationFactor>
+       <NormalizationFrequency>0.05</NormalizationFrequency>
+      </PolesZeros>
+      <StageGain>
+       <Value>0.473559</Value>
+       <Frequency>0.05</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="3">
+      <Coefficients>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>100.0</InputSampleRate>
+       <Factor>1</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1480000.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="4">
+      <Coefficients>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.113</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>100.0</InputSampleRate>
+       <Factor>5</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+    </Response>
+   </Channel>
+   <Channel locationCode="00" startDate="2003-04-22T07:39:00" restrictedStatus="open" endDate="2009-09-27T23:59:59" code="BHZ">
+    <Comment>
+     <Value>S/N #28736</Value>
+    </Comment>
+    <Latitude>56.4302</Latitude>
+    <Longitude>58.5625</Longitude>
+    <Elevation>250.0</Elevation>
+    <Depth>0.0</Depth>
+    <Azimuth>0.0</Azimuth>
+    <Dip>-90.0</Dip>
+    <Type>CONTINUOUS</Type>
+    <Type>GEOPHYSICAL</Type>
+    <SampleRate>20.0</SampleRate>
+    <ClockDrift>2.5E-6</ClockDrift>
+    <CalibrationUnits>
+     <Name>V</Name>
+     <Description>Volts</Description>
+    </CalibrationUnits>
+    <Sensor>
+     <Type>Streckeisen STS-1V/VBB Seismometer</Type>
+    </Sensor>
+    <Response>
+     <InstrumentSensitivity>
+      <Value>1.71613E9</Value>
+      <Frequency>0.05</Frequency>
+      <InputUnits>
+       <Name>M/S</Name>
+       <Description>Velocity in Meters Per Second</Description>
+      </InputUnits>
+      <OutputUnits>
+       <Name>COUNTS</Name>
+       <Description>Digital Counts</Description>
+      </OutputUnits>
+     </InstrumentSensitivity>
+     <Stage number="1">
+      <PolesZeros>
+       <InputUnits>
+        <Name>M/S</Name>
+        <Description>Velocity in Meters Per Second</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (HERTZ)</PzTransferFunctionType>
+       <NormalizationFactor>818.402</NormalizationFactor>
+       <NormalizationFrequency>0.05</NormalizationFrequency>
+       <Zero number="0">
+        <Real plusError="0" minusError="0">0</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="1">
+        <Real plusError="0" minusError="0">0</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="2">
+        <Real plusError="0" minusError="0">-12.5</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="3">
+        <Real plusError="0" minusError="0">-0.0242718</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="4">
+        <Real plusError="0" minusError="0">-0.0242718</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Pole number="0">
+        <Real plusError="0" minusError="0">-0.00196865</Real>
+        <Imaginary plusError="0" minusError="0">0.00194758</Imaginary>
+       </Pole>
+       <Pole number="1">
+        <Real plusError="0" minusError="0">-0.00196865</Real>
+        <Imaginary plusError="0" minusError="0">-0.00194758</Imaginary>
+       </Pole>
+       <Pole number="2">
+        <Real plusError="0" minusError="0">-0.0232144</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="3">
+        <Real plusError="0" minusError="0">-0.0254973</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="4">
+        <Real plusError="0" minusError="0">-6.37525</Real>
+        <Imaginary plusError="0" minusError="0">7.7043</Imaginary>
+       </Pole>
+       <Pole number="5">
+        <Real plusError="0" minusError="0">-6.37525</Real>
+        <Imaginary plusError="0" minusError="0">-7.7043</Imaginary>
+       </Pole>
+       <Pole number="6">
+        <Real plusError="0" minusError="0">-5.39926</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="7">
+        <Real plusError="0" minusError="0">-18.9158</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+      </PolesZeros>
+      <StageGain>
+       <Value>2445.98</Value>
+       <Frequency>0.05</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="2">
+      <PolesZeros>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (HERTZ)</PzTransferFunctionType>
+       <NormalizationFactor>1.0</NormalizationFactor>
+       <NormalizationFrequency>0.05</NormalizationFrequency>
+      </PolesZeros>
+      <StageGain>
+       <Value>0.474062</Value>
+       <Frequency>0.05</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="3">
+      <Coefficients>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>100.0</InputSampleRate>
+       <Factor>1</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1480000.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="4">
+      <Coefficients>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.113</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>100.0</InputSampleRate>
+       <Factor>5</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+    </Response>
+   </Channel>
+   <Channel locationCode="00" startDate="2003-04-22T07:39:00" restrictedStatus="open" endDate="2009-09-27T23:59:59" code="LHE">
+    <Comment>
+     <Value>S/N #18777</Value>
+    </Comment>
+    <Latitude>56.4302</Latitude>
+    <Longitude>58.5625</Longitude>
+    <Elevation>250.0</Elevation>
+    <Depth>0.0</Depth>
+    <Azimuth>90.0</Azimuth>
+    <Dip>0.0</Dip>
+    <Type>CONTINUOUS</Type>
+    <Type>GEOPHYSICAL</Type>
+    <SampleRate>1.0</SampleRate>
+    <ClockDrift>5.0E-5</ClockDrift>
+    <CalibrationUnits>
+     <Name>V</Name>
+     <Description>Volts</Description>
+    </CalibrationUnits>
+    <Sensor>
+     <Type>Streckeisen STS-1H/VBB Seismometer</Type>
+    </Sensor>
+    <Response>
+     <InstrumentSensitivity>
+      <Value>6.77098E9</Value>
+      <Frequency>0.05</Frequency>
+      <InputUnits>
+       <Name>M/S</Name>
+       <Description>Velocity in Meters Per Second</Description>
+      </InputUnits>
+      <OutputUnits>
+       <Name>COUNTS</Name>
+       <Description>Digital Counts</Description>
+      </OutputUnits>
+     </InstrumentSensitivity>
+     <Stage number="1">
+      <PolesZeros>
+       <InputUnits>
+        <Name>M/S</Name>
+        <Description>Velocity in Meters Per Second</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (HERTZ)</PzTransferFunctionType>
+       <NormalizationFactor>817.326</NormalizationFactor>
+       <NormalizationFrequency>0.05</NormalizationFrequency>
+       <Zero number="0">
+        <Real plusError="0" minusError="0">0</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="1">
+        <Real plusError="0" minusError="0">0</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="2">
+        <Real plusError="0" minusError="0">-12.5</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="3">
+        <Real plusError="0" minusError="0">-0.0242718</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="4">
+        <Real plusError="0" minusError="0">-0.0242718</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Pole number="0">
+        <Real plusError="0" minusError="0">-0.00195582</Real>
+        <Imaginary plusError="0" minusError="0">0.00196251</Imaginary>
+       </Pole>
+       <Pole number="1">
+        <Real plusError="0" minusError="0">-0.00195582</Real>
+        <Imaginary plusError="0" minusError="0">-0.00196251</Imaginary>
+       </Pole>
+       <Pole number="2">
+        <Real plusError="0" minusError="0">-0.0243066</Real>
+        <Imaginary plusError="0" minusError="0">0.00108784</Imaginary>
+       </Pole>
+       <Pole number="3">
+        <Real plusError="0" minusError="0">-0.0243066</Real>
+        <Imaginary plusError="0" minusError="0">-0.00108784</Imaginary>
+       </Pole>
+       <Pole number="4">
+        <Real plusError="0" minusError="0">-6.37525</Real>
+        <Imaginary plusError="0" minusError="0">7.7043</Imaginary>
+       </Pole>
+       <Pole number="5">
+        <Real plusError="0" minusError="0">-6.37525</Real>
+        <Imaginary plusError="0" minusError="0">-7.7043</Imaginary>
+       </Pole>
+       <Pole number="6">
+        <Real plusError="0" minusError="0">-5.39926</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="7">
+        <Real plusError="0" minusError="0">-18.9158</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+      </PolesZeros>
+      <StageGain>
+       <Value>2418.0</Value>
+       <Frequency>0.05</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="2">
+      <PolesZeros>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (HERTZ)</PzTransferFunctionType>
+       <NormalizationFactor>1.0</NormalizationFactor>
+       <NormalizationFrequency>0.05</NormalizationFrequency>
+      </PolesZeros>
+      <StageGain>
+       <Value>0.473013</Value>
+       <Frequency>0.05</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="3">
+      <Coefficients>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>100.0</InputSampleRate>
+       <Factor>1</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1480000.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="4">
+      <Coefficients>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.113</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>100.0</InputSampleRate>
+       <Factor>5</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="5">
+      <Coefficients>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+       <Numerator plusError="0" minusError="0">-0.0000000111359</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000378395</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000134125</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000002902</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000441872</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000433851</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000378577</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000955232</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000256732</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000443664</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000569499</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000505029</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000117698</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0000658972</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000174289</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000284269</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0003463</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000301137</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00010127</Numerator>
+       <Numerator plusError="0" minusError="0">0.000261167</Numerator>
+       <Numerator plusError="0" minusError="0">0.000729382</Numerator>
+       <Numerator plusError="0" minusError="0">0.0011724</Numerator>
+       <Numerator plusError="0" minusError="0">0.00140249</Numerator>
+       <Numerator plusError="0" minusError="0">0.0012245</Numerator>
+       <Numerator plusError="0" minusError="0">0.000510478</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000720217</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00224522</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0036394</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00435222</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00386099</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00186972</Numerator>
+       <Numerator plusError="0" minusError="0">0.00150362</Numerator>
+       <Numerator plusError="0" minusError="0">0.00562255</Numerator>
+       <Numerator plusError="0" minusError="0">0.00937321</Numerator>
+       <Numerator plusError="0" minusError="0">0.0113815</Numerator>
+       <Numerator plusError="0" minusError="0">0.0103845</Numerator>
+       <Numerator plusError="0" minusError="0">0.00567801</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00248444</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0126751</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0223684</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0283482</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0273955</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0171114</Numerator>
+       <Numerator plusError="0" minusError="0">0.00332994</Numerator>
+       <Numerator plusError="0" minusError="0">0.0327106</Numerator>
+       <Numerator plusError="0" minusError="0">0.067743</Numerator>
+       <Numerator plusError="0" minusError="0">0.103544</Numerator>
+       <Numerator plusError="0" minusError="0">0.134531</Numerator>
+       <Numerator plusError="0" minusError="0">0.155557</Numerator>
+       <Numerator plusError="0" minusError="0">0.163</Numerator>
+       <Numerator plusError="0" minusError="0">0.155557</Numerator>
+       <Numerator plusError="0" minusError="0">0.134531</Numerator>
+       <Numerator plusError="0" minusError="0">0.103544</Numerator>
+       <Numerator plusError="0" minusError="0">0.067743</Numerator>
+       <Numerator plusError="0" minusError="0">0.0327106</Numerator>
+       <Numerator plusError="0" minusError="0">0.00332994</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0171114</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0273955</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0283482</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0223684</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0126751</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00248444</Numerator>
+       <Numerator plusError="0" minusError="0">0.00567801</Numerator>
+       <Numerator plusError="0" minusError="0">0.0103845</Numerator>
+       <Numerator plusError="0" minusError="0">0.0113815</Numerator>
+       <Numerator plusError="0" minusError="0">0.00937321</Numerator>
+       <Numerator plusError="0" minusError="0">0.00562255</Numerator>
+       <Numerator plusError="0" minusError="0">0.00150362</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00186972</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00386099</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00435222</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0036394</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00224522</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000720217</Numerator>
+       <Numerator plusError="0" minusError="0">0.000510478</Numerator>
+       <Numerator plusError="0" minusError="0">0.0012245</Numerator>
+       <Numerator plusError="0" minusError="0">0.00140249</Numerator>
+       <Numerator plusError="0" minusError="0">0.0011724</Numerator>
+       <Numerator plusError="0" minusError="0">0.000729382</Numerator>
+       <Numerator plusError="0" minusError="0">0.000261167</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00010127</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000301137</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0003463</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000284269</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000174289</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0000658972</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000117698</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000505029</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000569499</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000443664</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000256732</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000955232</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000378577</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000433851</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000441872</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000002902</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000134125</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000378395</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0000000111359</Numerator>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>20.0</InputSampleRate>
+       <Factor>4</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>2.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="6">
+      <Coefficients>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.113</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>5.0</InputSampleRate>
+       <Factor>5</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>2.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+    </Response>
+   </Channel>
+   <Channel locationCode="00" startDate="2003-04-22T07:39:00" restrictedStatus="open" endDate="2009-09-27T23:59:59" code="LHN">
+    <Comment>
+     <Value>S/N #18778</Value>
+    </Comment>
+    <Latitude>56.4302</Latitude>
+    <Longitude>58.5625</Longitude>
+    <Elevation>250.0</Elevation>
+    <Depth>0.0</Depth>
+    <Azimuth>0.0</Azimuth>
+    <Dip>0.0</Dip>
+    <Type>CONTINUOUS</Type>
+    <Type>GEOPHYSICAL</Type>
+    <SampleRate>1.0</SampleRate>
+    <ClockDrift>5.0E-5</ClockDrift>
+    <CalibrationUnits>
+     <Name>V</Name>
+     <Description>Volts</Description>
+    </CalibrationUnits>
+    <Sensor>
+     <Type>Streckeisen STS-1H/VBB Seismometer</Type>
+    </Sensor>
+    <Response>
+     <InstrumentSensitivity>
+      <Value>6.86366E9</Value>
+      <Frequency>0.05</Frequency>
+      <InputUnits>
+       <Name>M/S</Name>
+       <Description>Velocity in Meters Per Second</Description>
+      </InputUnits>
+      <OutputUnits>
+       <Name>COUNTS</Name>
+       <Description>Digital Counts</Description>
+      </OutputUnits>
+     </InstrumentSensitivity>
+     <Stage number="1">
+      <PolesZeros>
+       <InputUnits>
+        <Name>M/S</Name>
+        <Description>Velocity in Meters Per Second</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (HERTZ)</PzTransferFunctionType>
+       <NormalizationFactor>818.212</NormalizationFactor>
+       <NormalizationFrequency>0.05</NormalizationFrequency>
+       <Zero number="0">
+        <Real plusError="0" minusError="0">0</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="1">
+        <Real plusError="0" minusError="0">0</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="2">
+        <Real plusError="0" minusError="0">-12.5</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="3">
+        <Real plusError="0" minusError="0">-0.0242718</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="4">
+        <Real plusError="0" minusError="0">-0.0242718</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Pole number="0">
+        <Real plusError="0" minusError="0">-0.00196763</Real>
+        <Imaginary plusError="0" minusError="0">0.00195101</Imaginary>
+       </Pole>
+       <Pole number="1">
+        <Real plusError="0" minusError="0">-0.00196763</Real>
+        <Imaginary plusError="0" minusError="0">-0.00195101</Imaginary>
+       </Pole>
+       <Pole number="2">
+        <Real plusError="0" minusError="0">-0.0231941</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="3">
+        <Real plusError="0" minusError="0">-0.025475</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="4">
+        <Real plusError="0" minusError="0">-6.37525</Real>
+        <Imaginary plusError="0" minusError="0">7.7043</Imaginary>
+       </Pole>
+       <Pole number="5">
+        <Real plusError="0" minusError="0">-6.37525</Real>
+        <Imaginary plusError="0" minusError="0">-7.7043</Imaginary>
+       </Pole>
+       <Pole number="6">
+        <Real plusError="0" minusError="0">-5.39926</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="7">
+        <Real plusError="0" minusError="0">-18.9158</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+      </PolesZeros>
+      <StageGain>
+       <Value>2448.0</Value>
+       <Frequency>0.05</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="2">
+      <PolesZeros>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (HERTZ)</PzTransferFunctionType>
+       <NormalizationFactor>1.0</NormalizationFactor>
+       <NormalizationFrequency>0.05</NormalizationFrequency>
+      </PolesZeros>
+      <StageGain>
+       <Value>0.473559</Value>
+       <Frequency>0.05</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="3">
+      <Coefficients>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>100.0</InputSampleRate>
+       <Factor>1</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1480000.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="4">
+      <Coefficients>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.113</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>100.0</InputSampleRate>
+       <Factor>5</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="5">
+      <Coefficients>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+       <Numerator plusError="0" minusError="0">-0.0000000111359</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000378395</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000134125</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000002902</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000441872</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000433851</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000378577</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000955232</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000256732</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000443664</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000569499</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000505029</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000117698</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0000658972</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000174289</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000284269</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0003463</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000301137</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00010127</Numerator>
+       <Numerator plusError="0" minusError="0">0.000261167</Numerator>
+       <Numerator plusError="0" minusError="0">0.000729382</Numerator>
+       <Numerator plusError="0" minusError="0">0.0011724</Numerator>
+       <Numerator plusError="0" minusError="0">0.00140249</Numerator>
+       <Numerator plusError="0" minusError="0">0.0012245</Numerator>
+       <Numerator plusError="0" minusError="0">0.000510478</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000720217</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00224522</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0036394</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00435222</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00386099</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00186972</Numerator>
+       <Numerator plusError="0" minusError="0">0.00150362</Numerator>
+       <Numerator plusError="0" minusError="0">0.00562255</Numerator>
+       <Numerator plusError="0" minusError="0">0.00937321</Numerator>
+       <Numerator plusError="0" minusError="0">0.0113815</Numerator>
+       <Numerator plusError="0" minusError="0">0.0103845</Numerator>
+       <Numerator plusError="0" minusError="0">0.00567801</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00248444</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0126751</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0223684</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0283482</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0273955</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0171114</Numerator>
+       <Numerator plusError="0" minusError="0">0.00332994</Numerator>
+       <Numerator plusError="0" minusError="0">0.0327106</Numerator>
+       <Numerator plusError="0" minusError="0">0.067743</Numerator>
+       <Numerator plusError="0" minusError="0">0.103544</Numerator>
+       <Numerator plusError="0" minusError="0">0.134531</Numerator>
+       <Numerator plusError="0" minusError="0">0.155557</Numerator>
+       <Numerator plusError="0" minusError="0">0.163</Numerator>
+       <Numerator plusError="0" minusError="0">0.155557</Numerator>
+       <Numerator plusError="0" minusError="0">0.134531</Numerator>
+       <Numerator plusError="0" minusError="0">0.103544</Numerator>
+       <Numerator plusError="0" minusError="0">0.067743</Numerator>
+       <Numerator plusError="0" minusError="0">0.0327106</Numerator>
+       <Numerator plusError="0" minusError="0">0.00332994</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0171114</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0273955</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0283482</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0223684</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0126751</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00248444</Numerator>
+       <Numerator plusError="0" minusError="0">0.00567801</Numerator>
+       <Numerator plusError="0" minusError="0">0.0103845</Numerator>
+       <Numerator plusError="0" minusError="0">0.0113815</Numerator>
+       <Numerator plusError="0" minusError="0">0.00937321</Numerator>
+       <Numerator plusError="0" minusError="0">0.00562255</Numerator>
+       <Numerator plusError="0" minusError="0">0.00150362</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00186972</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00386099</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00435222</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0036394</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00224522</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000720217</Numerator>
+       <Numerator plusError="0" minusError="0">0.000510478</Numerator>
+       <Numerator plusError="0" minusError="0">0.0012245</Numerator>
+       <Numerator plusError="0" minusError="0">0.00140249</Numerator>
+       <Numerator plusError="0" minusError="0">0.0011724</Numerator>
+       <Numerator plusError="0" minusError="0">0.000729382</Numerator>
+       <Numerator plusError="0" minusError="0">0.000261167</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00010127</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000301137</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0003463</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000284269</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000174289</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0000658972</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000117698</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000505029</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000569499</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000443664</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000256732</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000955232</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000378577</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000433851</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000441872</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000002902</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000134125</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000378395</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0000000111359</Numerator>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>20.0</InputSampleRate>
+       <Factor>4</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>2.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="6">
+      <Coefficients>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.113</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>5.0</InputSampleRate>
+       <Factor>5</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>2.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+    </Response>
+   </Channel>
+   <Channel locationCode="00" startDate="2003-04-22T07:39:00" restrictedStatus="open" endDate="2009-09-27T23:59:59" code="LHZ">
+    <Comment>
+     <Value>S/N #28736</Value>
+    </Comment>
+    <Latitude>56.4302</Latitude>
+    <Longitude>58.5625</Longitude>
+    <Elevation>250.0</Elevation>
+    <Depth>0.0</Depth>
+    <Azimuth>0.0</Azimuth>
+    <Dip>-90.0</Dip>
+    <Type>CONTINUOUS</Type>
+    <Type>GEOPHYSICAL</Type>
+    <SampleRate>1.0</SampleRate>
+    <ClockDrift>5.0E-5</ClockDrift>
+    <CalibrationUnits>
+     <Name>V</Name>
+     <Description>Volts</Description>
+    </CalibrationUnits>
+    <Sensor>
+     <Type>Streckeisen STS-1V/VBB Seismometer</Type>
+    </Sensor>
+    <Response>
+     <InstrumentSensitivity>
+      <Value>6.86453E9</Value>
+      <Frequency>0.05</Frequency>
+      <InputUnits>
+       <Name>M/S</Name>
+       <Description>Velocity in Meters Per Second</Description>
+      </InputUnits>
+      <OutputUnits>
+       <Name>COUNTS</Name>
+       <Description>Digital Counts</Description>
+      </OutputUnits>
+     </InstrumentSensitivity>
+     <Stage number="1">
+      <PolesZeros>
+       <InputUnits>
+        <Name>M/S</Name>
+        <Description>Velocity in Meters Per Second</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (HERTZ)</PzTransferFunctionType>
+       <NormalizationFactor>818.402</NormalizationFactor>
+       <NormalizationFrequency>0.05</NormalizationFrequency>
+       <Zero number="0">
+        <Real plusError="0" minusError="0">0</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="1">
+        <Real plusError="0" minusError="0">0</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="2">
+        <Real plusError="0" minusError="0">-12.5</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="3">
+        <Real plusError="0" minusError="0">-0.0242718</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Zero number="4">
+        <Real plusError="0" minusError="0">-0.0242718</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Zero>
+       <Pole number="0">
+        <Real plusError="0" minusError="0">-0.00196865</Real>
+        <Imaginary plusError="0" minusError="0">0.00194758</Imaginary>
+       </Pole>
+       <Pole number="1">
+        <Real plusError="0" minusError="0">-0.00196865</Real>
+        <Imaginary plusError="0" minusError="0">-0.00194758</Imaginary>
+       </Pole>
+       <Pole number="2">
+        <Real plusError="0" minusError="0">-0.0232144</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="3">
+        <Real plusError="0" minusError="0">-0.0254973</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="4">
+        <Real plusError="0" minusError="0">-6.37525</Real>
+        <Imaginary plusError="0" minusError="0">7.7043</Imaginary>
+       </Pole>
+       <Pole number="5">
+        <Real plusError="0" minusError="0">-6.37525</Real>
+        <Imaginary plusError="0" minusError="0">-7.7043</Imaginary>
+       </Pole>
+       <Pole number="6">
+        <Real plusError="0" minusError="0">-5.39926</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+       <Pole number="7">
+        <Real plusError="0" minusError="0">-18.9158</Real>
+        <Imaginary plusError="0" minusError="0">0</Imaginary>
+       </Pole>
+      </PolesZeros>
+      <StageGain>
+       <Value>2445.98</Value>
+       <Frequency>0.05</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="2">
+      <PolesZeros>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </OutputUnits>
+       <PzTransferFunctionType>LAPLACE (HERTZ)</PzTransferFunctionType>
+       <NormalizationFactor>1.0</NormalizationFactor>
+       <NormalizationFrequency>0.05</NormalizationFrequency>
+      </PolesZeros>
+      <StageGain>
+       <Value>0.474062</Value>
+       <Frequency>0.05</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="3">
+      <Coefficients>
+       <InputUnits>
+        <Name>V</Name>
+        <Description>Volts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>100.0</InputSampleRate>
+       <Factor>1</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1480000.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="4">
+      <Coefficients>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.113</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>100.0</InputSampleRate>
+       <Factor>5</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>1.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="5">
+      <Coefficients>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+       <Numerator plusError="0" minusError="0">-0.0000000111359</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000378395</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000134125</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000002902</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000441872</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000433851</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000378577</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000955232</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000256732</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000443664</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000569499</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000505029</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000117698</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0000658972</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000174289</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000284269</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0003463</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000301137</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00010127</Numerator>
+       <Numerator plusError="0" minusError="0">0.000261167</Numerator>
+       <Numerator plusError="0" minusError="0">0.000729382</Numerator>
+       <Numerator plusError="0" minusError="0">0.0011724</Numerator>
+       <Numerator plusError="0" minusError="0">0.00140249</Numerator>
+       <Numerator plusError="0" minusError="0">0.0012245</Numerator>
+       <Numerator plusError="0" minusError="0">0.000510478</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000720217</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00224522</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0036394</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00435222</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00386099</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00186972</Numerator>
+       <Numerator plusError="0" minusError="0">0.00150362</Numerator>
+       <Numerator plusError="0" minusError="0">0.00562255</Numerator>
+       <Numerator plusError="0" minusError="0">0.00937321</Numerator>
+       <Numerator plusError="0" minusError="0">0.0113815</Numerator>
+       <Numerator plusError="0" minusError="0">0.0103845</Numerator>
+       <Numerator plusError="0" minusError="0">0.00567801</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00248444</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0126751</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0223684</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0283482</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0273955</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0171114</Numerator>
+       <Numerator plusError="0" minusError="0">0.00332994</Numerator>
+       <Numerator plusError="0" minusError="0">0.0327106</Numerator>
+       <Numerator plusError="0" minusError="0">0.067743</Numerator>
+       <Numerator plusError="0" minusError="0">0.103544</Numerator>
+       <Numerator plusError="0" minusError="0">0.134531</Numerator>
+       <Numerator plusError="0" minusError="0">0.155557</Numerator>
+       <Numerator plusError="0" minusError="0">0.163</Numerator>
+       <Numerator plusError="0" minusError="0">0.155557</Numerator>
+       <Numerator plusError="0" minusError="0">0.134531</Numerator>
+       <Numerator plusError="0" minusError="0">0.103544</Numerator>
+       <Numerator plusError="0" minusError="0">0.067743</Numerator>
+       <Numerator plusError="0" minusError="0">0.0327106</Numerator>
+       <Numerator plusError="0" minusError="0">0.00332994</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0171114</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0273955</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0283482</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0223684</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0126751</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00248444</Numerator>
+       <Numerator plusError="0" minusError="0">0.00567801</Numerator>
+       <Numerator plusError="0" minusError="0">0.0103845</Numerator>
+       <Numerator plusError="0" minusError="0">0.0113815</Numerator>
+       <Numerator plusError="0" minusError="0">0.00937321</Numerator>
+       <Numerator plusError="0" minusError="0">0.00562255</Numerator>
+       <Numerator plusError="0" minusError="0">0.00150362</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00186972</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00386099</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00435222</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0036394</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00224522</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000720217</Numerator>
+       <Numerator plusError="0" minusError="0">0.000510478</Numerator>
+       <Numerator plusError="0" minusError="0">0.0012245</Numerator>
+       <Numerator plusError="0" minusError="0">0.00140249</Numerator>
+       <Numerator plusError="0" minusError="0">0.0011724</Numerator>
+       <Numerator plusError="0" minusError="0">0.000729382</Numerator>
+       <Numerator plusError="0" minusError="0">0.000261167</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00010127</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000301137</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0003463</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000284269</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000174289</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0000658972</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000117698</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000505029</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000569499</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000443664</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000256732</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000955232</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000378577</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000433851</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000441872</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000002902</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000134125</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000378395</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0000000111359</Numerator>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>20.0</InputSampleRate>
+       <Factor>4</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>2.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+     <Stage number="6">
+      <Coefficients>
+       <InputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </InputUnits>
+       <OutputUnits>
+        <Name>COUNTS</Name>
+        <Description>Digital Counts</Description>
+       </OutputUnits>
+       <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.113</Numerator>
+       <Numerator plusError="0" minusError="0">0.110357</Numerator>
+       <Numerator plusError="0" minusError="0">0.10268</Numerator>
+       <Numerator plusError="0" minusError="0">0.090692</Numerator>
+       <Numerator plusError="0" minusError="0">0.0754974</Numerator>
+       <Numerator plusError="0" minusError="0">0.0584477</Numerator>
+       <Numerator plusError="0" minusError="0">0.0409804</Numerator>
+       <Numerator plusError="0" minusError="0">0.0244562</Numerator>
+       <Numerator plusError="0" minusError="0">0.0100149</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00153046</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00975057</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0146032</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0163887</Numerator>
+       <Numerator plusError="0" minusError="0">-0.015667</Numerator>
+       <Numerator plusError="0" minusError="0">-0.0131538</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00961061</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00574629</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00214136</Numerator>
+       <Numerator plusError="0" minusError="0">0.000797673</Numerator>
+       <Numerator plusError="0" minusError="0">0.00285239</Numerator>
+       <Numerator plusError="0" minusError="0">0.00397829</Numerator>
+       <Numerator plusError="0" minusError="0">0.00426971</Numerator>
+       <Numerator plusError="0" minusError="0">0.00391289</Numerator>
+       <Numerator plusError="0" minusError="0">0.00313647</Numerator>
+       <Numerator plusError="0" minusError="0">0.00216751</Numerator>
+       <Numerator plusError="0" minusError="0">0.00119836</Numerator>
+       <Numerator plusError="0" minusError="0">0.000367088</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000248597</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000626427</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000787102</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000778327</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000658988</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000486084</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000305915</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000149824</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000033899</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000385256</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000729083</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000792878</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000687046</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000507341</Numerator>
+       <Numerator plusError="0" minusError="0">0.0000322292</Numerator>
+       <Numerator plusError="0" minusError="0">0.00001709</Numerator>
+       <Numerator plusError="0" minusError="0">0.00000673039</Numerator>
+       <Numerator plusError="0" minusError="0">0.000000876701</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000160361</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000204037</Numerator>
+       <Numerator plusError="0" minusError="0">-0.00000154942</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000862909</Numerator>
+       <Numerator plusError="0" minusError="0">-0.000000337741</Numerator>
+      </Coefficients>
+      <Decimation>
+       <InputSampleRate>5.0</InputSampleRate>
+       <Factor>5</Factor>
+       <Offset>0</Offset>
+       <Delay>0.0</Delay>
+       <Correction>0.0</Correction>
+      </Decimation>
+      <StageGain>
+       <Value>2.0</Value>
+       <Frequency>0.0</Frequency>
+      </StageGain>
+     </Stage>
+    </Response>
+   </Channel>
+  </Station>
+ </Network>
+</FDSNStationXML>
