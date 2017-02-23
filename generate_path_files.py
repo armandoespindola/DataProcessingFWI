@@ -184,6 +184,19 @@ def generate_stations():
                   f("stations_path", eventname))
 
 
+def generate_filter():
+    for eventname in events:
+        for period_band in settings["period_bands"]:
+            data = {
+                "measurement_file": f("measure_file", eventname, period_band),
+                "output_file": f("windows_filter_file", eventname, period_band),
+                "station_file": f("stations_file", eventname),
+                "window_file": f("windows_file", eventname, period_band)
+            }
+            dump_json(data,
+                      f("filter_path", eventname, period_band))
+
+
 if __name__ == '__main__':
     steps = dict([(x[9:], x) for x in locals().keys()
                   if x.startswith('generate_')])

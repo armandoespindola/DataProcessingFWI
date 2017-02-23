@@ -42,6 +42,7 @@
                       path: "{period_band}"
                       files:
                         - windows_file: "windows.json"
+                        - windows_filter_file: "windows.filter.json"
 
 - measure:
     subfolders:
@@ -66,6 +67,14 @@
           path: "output"
           files:
             - stations_file: "{eventname}.json"
+
+- filter:
+    subfolders:
+      - filter_paths:
+          path: "paths"
+          files:
+            - filter_path: "filter.{eventname}.{period_band}.path.json"
+
 
 - seis:
     subfolders:

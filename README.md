@@ -70,3 +70,16 @@ and then run the script
 	$ cd stations
 	$ ./extract_stations.sh
 
+
+## Filter windows
+
+
+Generate path files
+
+	$ python generate_path_files.py filter
+
+and then run the script
+
+	$ cd filter
+	$ ./filter_windows.sh
+
