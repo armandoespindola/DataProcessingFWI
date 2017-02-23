@@ -56,6 +56,18 @@
           files:
             - measure_file: "measure.{eventname}.{period_band}.json"
 
+- adjoint:
+    subfolders:
+      - adjoint_paths:
+          path: "paths"
+          files:
+            - adjoint_path: "adjoint.{eventname}.{period_band}.path.json"
+      - adjoint_figures: "figures"
+      - adjoint_output:
+          path: "output"
+          files:
+            - adjoint_file: "adjoint.{eventname}.{period_band}.h5"
+
 
 - stations:
     subfolders:

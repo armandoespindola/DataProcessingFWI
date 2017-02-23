@@ -197,6 +197,23 @@ def generate_filter():
                       f("filter_path", eventname, period_band))
 
 
+def generate_adjoint():
+    for eventname in events:
+        for period_band in settings["period_bands"]:
+            data = {
+                "figure_dir": d("adjoint_figures"),
+                "figure_mode": False,
+                "obsd_asdf": f("proc_obsd", eventname, period_band),
+                "obsd_tag": settings["proc_obsd_tag"],
+                "output_file": f("adjoint_file", eventname, period_band),
+                "synt_asdf": f("proc_synt", eventname, period_band),
+                "synt_tag": settings["proc_synt_tag"],
+                "window_file": f("windows_filter_file", eventname, period_band)
+            }
+            dump_json(data,
+                      f("adjoint_path", eventname, period_band))
+
+
 if __name__ == '__main__':
     steps = dict([(x[9:], x) for x in locals().keys()
                   if x.startswith('generate_')])
