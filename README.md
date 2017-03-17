@@ -96,6 +96,21 @@ and then run the script
 	$ cd ..
 
 
+## Calculate adjoints
+
+
+Generate path files
+
+	$ python generate_path_files.py adjoint
+
+and then run the script
+
+	$ cd adjoint
+	$ ./run_pyadj_mt.sh
+	$ cd ..
+
+
+
 ## Calculate weights
 
 
