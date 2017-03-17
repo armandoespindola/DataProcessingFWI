@@ -1,5 +1,11 @@
 # Workflow test
 
+# Running the tests
+
+You can generate a script from the instructions below using
+`generate_run_script.sh`. Then you can run the created `run.sh` file.
+
+
 ## Setup
 
 First generate needed folders by
@@ -18,6 +24,7 @@ and then run the script
 
 	$ cd converter
 	$ ./convert_to_asdf.sh
+	$ cd ..
 
 ## Process asdf
 
@@ -30,6 +37,7 @@ and then run the script
 
 	$ cd proc
 	$ ./run_preprocessing.sh
+	$ cd ..
 
 
 ## Select windows
@@ -43,6 +51,7 @@ and then run the script
 
 	$ cd windows
 	$ ./select_windows.sh
+	$ cd ..
 
 
 ## Calculate measures
@@ -54,8 +63,9 @@ Generate path files
 
 and then run the script
 
-	$ cd measures
+	$ cd measure
 	$ ./run_measureadj.sh
+	$ cd ..
 
 
 ## Generate station.json files
@@ -69,6 +79,7 @@ and then run the script
 
 	$ cd stations
 	$ ./extract_stations.sh
+	$ cd ..
 
 
 ## Filter windows
@@ -82,6 +93,7 @@ and then run the script
 
 	$ cd filter
 	$ ./filter_windows.sh
+	$ cd ..
 
 
 ## Calculate weights
@@ -100,6 +112,7 @@ and then run the script
 
 	$ cd weights
 	$ ./calc_weights.sh
+	$ cd ..
 
 
 ## Sum adjoint sources
@@ -113,3 +126,4 @@ and then run the script
 
 	$ cd sum_adjoint
 	$ ./sum_adjoint.sh
+	$ cd ..
