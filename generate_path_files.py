@@ -37,12 +37,12 @@ class FileOperator(object):
 
     def load_yaml(self, filename):
         with open(filename) as f:
-            data = yaml.load(f)
+            data = yaml.safe_load(f)
         return data
 
     def dump_yaml(self, data, filename):
         with open(filename, "w") as f:
-            data = yaml.dump(data, f, indent=2)
+            data = yaml.safe_dump(data, f, indent=2)
         return data
         print("{} is written.".format(filename))
 
