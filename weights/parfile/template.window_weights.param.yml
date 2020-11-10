@@ -5,8 +5,8 @@
 # If False, then the source weighting will be turned off
 receiver_weighting:
   flag: True
-  plot: True
-  search_ratio: 0.03
+  plot: False
+  search_ratio: 0.35
 
 # category weighting
 category_weighting:
