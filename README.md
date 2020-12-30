@@ -1,5 +1,12 @@
 # Workflow test
 
+# Environment setup
+
+Batch scripts contain slurm headers and mpirun calls.
+
+Number cpu cores per node and account name (can be blank) can be set by running
+`setup_scripts.sh` script.
+
 # Running the tests
 
 You can generate a script from the instructions below using

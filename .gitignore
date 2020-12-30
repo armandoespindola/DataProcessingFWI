@@ -6,3 +6,12 @@ seis
 window_weights.*.param.yml
 run.sh
 slurm*.out
+converter/convert_to_asdf.sh
+proc/run_preprocessing.sh
+windows/select_windows.sh
+measure/run_measureadj.sh
+stations/extract_stations.sh
+filter/filter_windows.sh
+adjoint/run_pyadj_mt.sh
+weights/calc_weights.sh
+sum_adjoint/sum_adjoint.sh

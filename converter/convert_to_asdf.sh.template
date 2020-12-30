@@ -1,0 +1,22 @@
+ #!/bin/bash
+#SBATCH --job-name=convert_to_asdf
+#SBATCH --account=:account:
+#SBATCH --exclusive
+#SBATCH --export=ALL
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=01:00:00
+
+STARTTIME=$(date +%s)
+echo "start time is : $(date +"%T")"
+
+for f in paths/*.path.json
+do
+    pypaw-convert_to_asdf -f $f -v -s
+done
+
+ENDTIME=$(date +%s)
+Ttaken=$(($ENDTIME - $STARTTIME))
+echo
+echo "finish time is : $(date +"%T")"
+echo "RUNTIME is :  $(($Ttaken / 3600)) hours ::  $(($(($Ttaken%3600))/60)) minutes  :: $(($Ttaken % 60)) seconds."

@@ -1,0 +1,31 @@
+#!/bin/bash
+#SBATCH --job-name=weights
+#SBATCH --account=:account:
+#SBATCH --exclusive
+#SBATCH --export=ALL
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=01:00:00
+
+STARTTIME=$(date +%s)
+echo "start time is : $(date +"%T")"
+
+export gen="python ../generate_path_files.py -p ../paths.yml -s ../settings.yml -e ../event_list"
+
+events=`$gen list_events`
+
+for e in $events
+do
+    pypaw-window_weights \
+		-p parfile/window_weights.$e.param.yml \
+		-f paths/window_weights.$e.path.json \
+		-v
+done
+
+ENDTIME=$(date +%s)
+Ttaken=$(($ENDTIME - $STARTTIME))
+echo
+echo "finish time is : $(date +"%T")"
+echo "RUNTIME is :  $(($Ttaken / 3600)) hours ::  $(($(($Ttaken%3600))/60)) minutes  :: $(($Ttaken % 60)) seconds."
+
+
