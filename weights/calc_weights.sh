@@ -1,4 +1,11 @@
 #!/bin/bash
+#SBATCH --job-name=weights
+##SBATCH --account=GEO111
+#SBATCH --exclusive
+#SBATCH --export=ALL
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=01:00:00
 
 
 export gen="python ../generate_path_files.py -p ../paths.yml -s ../settings.yml -e ../event_list"

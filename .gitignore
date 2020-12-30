@@ -5,3 +5,4 @@ seis
 */figures
 window_weights.*.param.yml
 run.sh
+slurm*.out
