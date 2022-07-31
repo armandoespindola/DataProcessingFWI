@@ -62,7 +62,7 @@ class Base(object):
         """
         i = self.step_count
         j = self.count_zeros
-        print("zeros : ",j)
+
         k = len(self.step_lens)
         x = np.array(self.step_lens[k-i-1:k])
         f = np.array(self.func_vals[k-i-1:k])
