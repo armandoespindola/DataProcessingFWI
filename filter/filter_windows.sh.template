@@ -3,9 +3,13 @@
 #SBATCH --account=:account:
 #SBATCH --exclusive
 #SBATCH --export=ALL
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --time=01:00:00
+#SBATCH --nodes=:nodes:
+#SBATCH --ntasks=:nproc:
+#SBATCH --time=:time:
+#SBATCH --partition=:partition:
+#SBATCH --array=:array:
+#SBATCH --gres=:gres:
+#SBATCH --output=output_:job_id:.o
 
 STARTTIME=$(date +%s)
 echo "start time is : $(date +"%T")"
@@ -20,10 +24,13 @@ for e in $events
 do
     for p in $periods
     do
-	pypaw-filter_windows \
+	mpirun -np 1 pypaw-filter_windows \
 	    -p ./parfile/filter_windows.$p.param.yml \
 	    -f ./paths/filter.$e.$p.path.json \
 	    -v
+	
+	if [ $? -ne 0 ]; then exit 1; fi
+	
     done
 done
 

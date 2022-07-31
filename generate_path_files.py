@@ -18,6 +18,39 @@ import json
 import yaml
 
 
+def load_json(filename):
+    with open(filename) as f:
+        data = json.load(f)
+    return data
+
+
+def dump_json(data, filename):
+    with open(filename, "w") as file_:
+        json.dump(data, file_, indent=2, sort_keys=True)
+    print("{} is written.".format(filename))
+
+
+def load_yaml(filename):
+    with open(filename) as f:
+        data = yaml.safe_load(f)
+    return data
+
+
+def dump_yaml(data, filename):
+    with open(filename, "w") as f:
+        data = yaml.safe_dump(data, f, indent=2)
+    print("{} is written.".format(filename))
+    return data
+
+
+def load_events(filename):
+    with open(filename) as f:
+        events = [line.replace("\n", "") for line in f
+                  if not line.startswith("#")]
+    return events
+
+
+
 class FileOperator(object):
     """Documentation for FileOperator
 
@@ -48,11 +81,11 @@ class FileOperator(object):
 
     def load_events(self, filename):
         with open(filename) as f:
-            events = [line.replace("\n", "") for line in f]
+            events = [line.replace("\n", "") for line in f if not line.startswith('#')]
         return events
-
+    
     def parse_folder(self, folder, parent):
-        name, data = folder.items()[0]
+        name, data = list(folder.items())[0]
         paths = {}
         files = {}
         if isinstance(data, str):
@@ -67,7 +100,7 @@ class FileOperator(object):
         paths[name] = os.path.join(parent, path)
 
         for child_file in child_files:
-            fname, filepath = child_file.items()[0]
+            fname, filepath = list(child_file.items())[0]
             files[fname] = os.path.join(paths[name], filepath)
 
         for subfolder in subfolders:
@@ -124,7 +157,7 @@ class FileGenerator(FileOperator):
     def generate_folders(self):
         for eventname in self.events:
             for period_band in self.settings["period_bands"]:
-                for name, path in self.folders.iteritems():
+                for name, path in self.folders.items():
                     self.makedir(path.format(eventname=eventname,
                                              period_band=period_band))
 
@@ -163,7 +196,7 @@ class FileGenerator(FileOperator):
         for eventname in self.events:
             for period_band in self.settings["period_bands"]:
                 data = {
-                    "figure_mode": True,
+                    "figure_mode": False,
                     "obsd_asdf": self.f("proc_obsd", eventname, period_band),
                     "obsd_tag": self.settings["proc_obsd_tag"],
                     "output_file": self.f("windows_file", eventname, period_band),  # NOQA
@@ -178,7 +211,7 @@ class FileGenerator(FileOperator):
             for period_band in self.settings["period_bands"]:
                 data = {
                     "figure_dir": self.d("measure_figures"),
-                    "figure_mode": True,
+                    "figure_mode": False,
                     "obsd_asdf": self.f("proc_obsd", eventname, period_band),
                     "obsd_tag": self.settings["proc_obsd_tag"],
                     "output_file": self.f("measure_file", eventname, period_band),  # NOQA
@@ -230,10 +263,11 @@ class FileGenerator(FileOperator):
         measurements = {}
         for period_band in self.settings["period_bands"]:
             windows_file = self.f("windows_filter_file", eventname, period_band)  # NOQA
+            #print(windows_file)
             windows_data = self.load_json(windows_file)
-            measurements[period_band] = dict((x, 0) for x in ["BHR", "BHT", "BHZ"])  # NOQA
-            for station, components in windows_data.iteritems():
-                for component, windows in components.iteritems():
+            measurements[period_band] = dict((x, 0) for x in ["MXR", "MXT", "MXZ"])  # NOQA
+            for station, components in windows_data.items():
+                for component, windows in components.items():
                     c = component.split(".")[-1]
                     measurements[period_band][c] += len(windows)
         return measurements

@@ -1,14 +1,34 @@
 #!/bin/bash
 
-echo "Setup Environment"
-read -p "Number of processors per node: " nproc
-if [[ -z $nproc ]]; then
-	echo "Number of processors cannot be empty."
-	exit
+if [ $# -lt 3 ]; then
+    echo "This program sets up sbatch scripts for workflow"
+    echo "usage: ./workflow_setup_scripts.sh account nproc narray verbose[false==0/true==1]"; exit 1;
 fi
-read -p "Account name: " account
 
-root=`pwd`
+account=$1
+nproc=$2
+narray=$3
+verbose=$4
+
+
+if [ -z "$verbose" ]; then
+    verbose=0
+fi
+
+
+if [ $verbose -eq 1]; then
+    echo "##### Setup for sbatch scriptc for workflow"
+    echo "Account: " $account
+    echo "Nproc: " $nproc
+    echo "Narray: " $narray
+fi
+
+
+# Loading env variables
+source setup_env_parameters.sh PAR_INV 1 1
+
+cd $WORKFLOW_DIR
+
 templates=("converter/convert_to_asdf.sh.template"
            "proc/run_preprocessing.sh.template"
            "windows/select_windows.sh.template"
@@ -24,6 +44,7 @@ do
 	target=`echo $template | sed -e s/\.template//g`
 	cp $template $target
 	sed -i "s/:nproc:/$nproc/g" $target
+	sed -i "s/:narray:/$narray/g" $target
 	if [[ -z $account ]]; then
 		sed -i "/:account:/d" $target
 	else

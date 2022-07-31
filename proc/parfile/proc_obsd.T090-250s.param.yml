@@ -2,7 +2,7 @@
 # seismogram. For observed seismogram, you probably want to set this
 # flag to True to get real gound displacement. For synthetic data,
 # please set this flag to False
-remove_response_flag: True
+remove_response_flag: False
 water_level: 100
 
 # filtering the seismogram. If you set both remove_response_flag to True
@@ -36,4 +36,4 @@ rotate_flag: True
 # rotation. If it doesn't pass the sanity check, the component will
 # be thrown away.
 # True if processing observed data; False if processing synthetic data.
-sanity_check: True
+sanity_check: False

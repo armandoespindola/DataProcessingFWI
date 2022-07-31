@@ -15,3 +15,4 @@ filter/filter_windows.sh
 adjoint/run_pyadj_mt.sh
 weights/calc_weights.sh
 sum_adjoint/sum_adjoint.sh
+*~

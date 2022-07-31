@@ -1,18 +1,22 @@
  #!/bin/bash
 #SBATCH --job-name=convert_to_asdf
 #SBATCH --account=:account:
+#SBATCH --array=:array:
 #SBATCH --exclusive
 #SBATCH --export=ALL
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=01:00:00
+#SBATCH --partition=m100_usr_preempt
+#SBATCH --output=output_%a.o
+#SBATCH --error=output_error_%a.o
 
 STARTTIME=$(date +%s)
 echo "start time is : $(date +"%T")"
 
 for f in paths/*.path.json
 do
-    pypaw-convert_to_asdf -f $f -v -s
+mpirun -np 1 pypaw-convert_to_asdf -f $f -v -s
 done
 
 ENDTIME=$(date +%s)

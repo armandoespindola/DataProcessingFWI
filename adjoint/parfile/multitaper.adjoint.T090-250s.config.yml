@@ -19,12 +19,12 @@ adjoint_config:
   dt_fac: 1.0
   err_fac: 8.0
   dt_max_scale: 5.0
-  measure_type: 'dt'
+  measure_type: 'am'
   taper_type: 'cos_p10'
   use_cc_error: True
   use_mt_error: False
   dt_sigma_min: 1.0
-  dlna_sigma_min: 0.8
+  dlna_sigma_min: 1.0
 
 
 process_config:
@@ -32,8 +32,8 @@ process_config:
   # interpolation. Starttime will be automatically set as cmt_time - 1.5 * hdur
   # to fit the SPECFEM behaviour
   interp_flag: True
-  interp_delta: 0.1615
-  interp_npts: 69972
+  interp_delta: 0.140000
+  interp_npts: 77300
 
   # for sum multiple insturments, like "II.AAK.00.BHZ" and "II.AAK.10.BHZ". if you turn
   # the weight_flag to be true, then you need also provide the weight_dict in the code

@@ -3,9 +3,14 @@
 #SBATCH --account=:account:
 #SBATCH --exclusive
 #SBATCH --export=ALL
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --time=01:00:00
+#SBATCH --nodes=:nodes:
+#SBATCH --ntasks=:nproc:
+#SBATCH --time=:time:
+#SBATCH --partition=:partition:
+#SBATCH --array=:array:
+#SBATCH --gres=:gres:
+#SBATCH --output=output_:job_id:.o
+
 
 STARTTIME=$(date +%s)
 echo "start time is : $(date +"%T")"
@@ -16,10 +21,13 @@ events=`$gen list_events`
 
 for e in $events
 do
-    pypaw-window_weights \
+   mpirun -np 1 pypaw-window_weights \
 		-p parfile/window_weights.$e.param.yml \
 		-f paths/window_weights.$e.path.json \
 		-v
+
+   if [ $? -ne 0 ]; then exit 1; fi
+   
 done
 
 ENDTIME=$(date +%s)
