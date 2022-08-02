@@ -2,7 +2,7 @@
 
 if [ $# -lt 3 ]; then
     echo "This program sets up sbatch scripts for workflow"
-    echo "usage: ./workflow_setup_scripts.sh account nproc narray verbose[false==0/true==1]"; exit 1;
+    echo "usage: ./setup_scripts.sh account nproc narray verbose[false==0/true==1]"; exit 1;
 fi
 
 account=$1
@@ -16,18 +16,13 @@ if [ -z "$verbose" ]; then
 fi
 
 
-if [ $verbose -eq 1]; then
+if [ $verbose -eq 1 ]; then
     echo "##### Setup for sbatch scriptc for workflow"
     echo "Account: " $account
     echo "Nproc: " $nproc
     echo "Narray: " $narray
 fi
 
-
-# Loading env variables
-source setup_env_parameters.sh PAR_INV 1 1
-
-cd $WORKFLOW_DIR
 
 templates=("converter/convert_to_asdf.sh.template"
            "proc/run_preprocessing.sh.template"
@@ -44,11 +39,16 @@ do
 	target=`echo $template | sed -e s/\.template//g`
 	cp $template $target
 	sed -i "s/:nproc:/$nproc/g" $target
-	sed -i "s/:narray:/$narray/g" $target
-	if [[ -z $account ]]; then
+	if [ -z $account ]; then
 		sed -i "/:account:/d" $target
 	else
 		sed -i "s/:account:/$account/g" $target
+	fi
+
+	if [ -z $account ]; then
+		sed -i "/:array:/d" $target
+	else
+		sed -i "s/:array:/$narray/g" $target
 	fi
 	echo "$target is written."
 done

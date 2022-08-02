@@ -1,7 +1,8 @@
 period_bands:
-  - T090-250s
+  - T017-040s
+  - T040-100s
 
-raw_obsd_tag: synthetic
-raw_synt_tag: synthetic
+raw_obsd_tag: obsd
+raw_synt_tag: synt
 proc_obsd_tag: proc_obsd
 proc_synt_tag: proc_synt

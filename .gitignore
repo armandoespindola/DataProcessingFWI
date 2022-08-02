@@ -19,3 +19,4 @@ sum_adjoint/sum_adjoint.sh
 line_search/fval
 line_search/steps
 line_search/status
+fval

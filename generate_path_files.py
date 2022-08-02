@@ -16,40 +16,7 @@ import argparse
 import os
 import json
 import yaml
-
-
-def load_json(filename):
-    with open(filename) as f:
-        data = json.load(f)
-    return data
-
-
-def dump_json(data, filename):
-    with open(filename, "w") as file_:
-        json.dump(data, file_, indent=2, sort_keys=True)
-    print("{} is written.".format(filename))
-
-
-def load_yaml(filename):
-    with open(filename) as f:
-        data = yaml.safe_load(f)
-    return data
-
-
-def dump_yaml(data, filename):
-    with open(filename, "w") as f:
-        data = yaml.safe_dump(data, f, indent=2)
-    print("{} is written.".format(filename))
-    return data
-
-
-def load_events(filename):
-    with open(filename) as f:
-        events = [line.replace("\n", "") for line in f
-                  if not line.startswith("#")]
-    return events
-
-
+import subprocess
 
 class FileOperator(object):
     """Documentation for FileOperator
@@ -265,7 +232,8 @@ class FileGenerator(FileOperator):
             windows_file = self.f("windows_filter_file", eventname, period_band)  # NOQA
             #print(windows_file)
             windows_data = self.load_json(windows_file)
-            measurements[period_band] = dict((x, 0) for x in ["MXR", "MXT", "MXZ"])  # NOQA
+            #measurements[period_band] = dict((x, 0) for x in ["MXR", "MXT", "MXZ"])  # NOQA
+            measurements[period_band] = dict((x, 0) for x in ["BHR", "BHT", "BHZ"])  # NOQA
             for station, components in windows_data.items():
                 for component, windows in components.items():
                     c = component.split(".")[-1]
@@ -276,7 +244,10 @@ class FileGenerator(FileOperator):
         counts = self.count_windows(eventname)
         for p in counts:
             for c in counts[p]:
-                counts[p][c] = 1 / counts[p][c]
+                if counts[p][c] != 0:
+                    counts[p][c] = 1 / counts[p][c]
+                else:
+                    counts[p][c] = 0
         return counts
 
     def generate_weight_params(self):
@@ -311,9 +282,26 @@ class FileGenerator(FileOperator):
                 }
             self.dump_json(data, self.f("sum_adjoint_path", eventname))
 
+
+    def clean(self):
+        print ("Cleaning folders : ")
+        command = 'files=$(find .  -type d -name "output");'
+        command += 'for ifiles in $files; do rm -rfv "$ifiles/"*; done;'
+        subprocess.run(command,shell=True,check=True)
+        command = 'files=$(find .  -type d -name "paths");'
+        command += 'for ifiles in $files; do rm -rfv "$ifiles/"*; done;'
+        subprocess.run(command,shell=True,check=True)
+        print ("Cleaning folders : Done")
+        
+
+        
+        
+
     def run(self):
         steps = dict([(x[9:], x) for x in dir(self)
                       if x.startswith('generate_')])
+        steps["clean"] = "clean"
+        
         parser = argparse.ArgumentParser(
             description='Generate path files')
         parser.add_argument('-p', '--paths-file', default="paths.yml")
