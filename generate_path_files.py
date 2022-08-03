@@ -302,7 +302,7 @@ class FileGenerator(FileOperator):
                     desc="Computing raw total misfits")
         for per_band in self.settings["period_bands"]:
             for eventname in self.events:
-                measurements = self.load_json(self.f("measure_file_filter",
+                measurements = self.load_json(self.f("measure_file",
                                        eventname, per_band)).items()
                 for sta, sta_meas in measurements:
                     for comp, comp_meas in sta_meas.items():
@@ -363,7 +363,7 @@ class FileGenerator(FileOperator):
     def generate_misfit(self):
         misfit_type = self.settings['misfit_type']
         print(misfit_type)
-        misfit = self.generate_misfit_main('weight_dt_file',misfit_type)
+        misfit = self.generate_misfit_main('weight_file',misfit_type)
         print("Total misfit ("  + misfit_type +  "): ",misfit)
         f=open("fval",'w')
         f.write("%f" % (misfit))
