@@ -16,6 +16,8 @@ adjoint/run_pyadj_mt.sh
 weights/calc_weights.sh
 sum_adjoint/sum_adjoint.sh
 *~
+*.sh
+window_weights*
 line_search/fval
 line_search/steps
 line_search/status

@@ -55,19 +55,26 @@
           path: "output"
           files:
             - measure_file: "measure.{eventname}.{period_band}.json"
-
+            - measure_file_filter: "measure.{eventname}.{period_band}.json.filter"
 - adjoint:
     subfolders:
       - adjoint_paths:
           path: "paths"
           files:
             - adjoint_path: "adjoint.{eventname}.{period_band}.path.json"
+            - adjoint_path_dt: "adjoint_dt.{eventname}.{period_band}.path.json"
+            - adjoint_path_am: "adjoint_am.{eventname}.{period_band}.path.json"
+            - adjoint_path_dt_q: "adjoint_dt_q.{eventname}.{period_band}.path.json"
+            - adjoint_path_am_q: "adjoint_am_q.{eventname}.{period_band}.path.json"
       - adjoint_figures: "figures"
       - adjoint_output:
           path: "output"
           files:
             - adjoint_file: "adjoint.{eventname}.{period_band}.h5"
-
+            - adjoint_file_dt: "adjoint_dt.{eventname}.{period_band}.h5"
+            - adjoint_file_am: "adjoint_am.{eventname}.{period_band}.h5"
+            - adjoint_file_dt_q: "adjoint_dt_q.{eventname}.{period_band}.h5"
+            - adjoint_file_am_q: "adjoint_am_q.{eventname}.{period_band}.h5"
 
 - stations:
     subfolders:
@@ -94,10 +101,12 @@
           files:
             - weight_template: "template.window_weights.param.yml"
             - weight_parfile: "window_weights.{eventname}.param.yml"
+            - weight_parfile_dt_am: "window_weights_dt_am.{eventname}.param.yml"
       - weight_paths:
           path: "paths"
           files:
             - weight_path: "window_weights.{eventname}.path.json"
+            - weight_path_dt_am: "window_weights_dt_am.{eventname}.path.json"
       - weight_output:
           path: "output"
           subfolders:
@@ -110,6 +119,8 @@
                         - weight_log: "weight.log"
                 files:
                   - weight_file: "window_weights.{period_band}.json"
+                  - weight_dt_file: "window_weights.dt.{period_band}.json"
+                  - weight_am_file: "window_weights.am.{period_band}.json"
 
 - sum_adjoint:
     subfolders:
@@ -117,11 +128,12 @@
           path: "output"
           files:
             - sum_adjoint_file: "adjoint_sum.{eventname}.h5"
+            - sum_adjoint_file_q: "adjoint_sum_q.{eventname}.h5"
       - sum_adjoint_paths:
           path: "paths"
           files:
             - sum_adjoint_path: "adjoint_sum.{eventname}.path.json"
-
+            - sum_adjoint_path_q: "adjoint_sum_q.{eventname}.path.json"
 - seis:
     subfolders:
       - raw_obsd:

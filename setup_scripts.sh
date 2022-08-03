@@ -31,7 +31,9 @@ templates=("converter/convert_to_asdf.sh.template"
            "stations/extract_stations.sh.template"
            "filter/filter_windows.sh.template"
            "adjoint/run_pyadj_mt.sh.template"
+	   "adjoint/run_pyadj_mt_dt_am.sh.template"
            "weights/calc_weights.sh.template"
+	   "weights/calc_weights_dt_am.sh.template"
            "sum_adjoint/sum_adjoint.sh.template")
 
 for template in "${templates[@]}"
