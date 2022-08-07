@@ -1,6 +1,7 @@
 *.py[oc]
 *.path.json
-seis
+seis/proc/*.h5
+seis/raw/*.h5
 */output
 */figures
 window_weights.*.param.yml
