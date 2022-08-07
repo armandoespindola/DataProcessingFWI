@@ -2,6 +2,11 @@ period_bands:
   - T017-040s
   - T040-100s
 
+data_components:
+  - BHZ
+  - BHT
+  - BHR
+
 raw_obsd_tag: obsd
 raw_synt_tag: synt
 proc_obsd_tag: proc_obsd

@@ -3,6 +3,7 @@
 """Generate path files for pypaw
 
 :copyright:
+   Armando Espindola (armando.espindolacarmona@kaust.edu.sa), 2021
    Ridvan Orsvuran (orsvuran@geoazur.unice.fr), 2017
 :license:
     GNU Lesser General Public License, version 3 (LGPLv3)
@@ -418,7 +419,8 @@ class FileGenerator(FileOperator):
             p_amp = p+"_AM"
             new_ratio[p_tt] = {}
             new_ratio[p_amp] = {}
-            for c in ["BHR", "BHT", "BHZ"]:
+            #for c in ["BHR", "BHT", "BHZ"]:
+            for c in self.settings['data_components']:
                 new_ratio[p_tt][c] = w_tt*ratio[p][c]
                 new_ratio[p_amp][c] = w_amp*ratio[p][c]
         return new_ratio
@@ -432,7 +434,8 @@ class FileGenerator(FileOperator):
             #print(windows_file)
             windows_data = self.load_json(windows_file)
             #measurements[period_band] = dict((x, 0) for x in ["MXR", "MXT", "MXZ"])  # NOQA
-            measurements[period_band] = dict((x, 0) for x in ["BHR", "BHT", "BHZ"])  # NOQA
+            measurements[period_band] = dict((x, 0)
+                                             for x in self.settings['data_components'])  # NOQA
             for station, components in windows_data.items():
                 for component, windows in components.items():
                     c = component.split(".")[-1]

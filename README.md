@@ -149,3 +149,25 @@ and then run the script
 	$ cd sum_adjoint
 	$ ./sum_adjoint.sh
 	$ cd ..
+
+
+# Running workflow for a different data set
+
+## Edit settings.yml
+
+Modify:
+- period_bands
+- data_components
+- tag obsd
+- tag synt
+- misfit_type (misfit_dt,misfit_am,misfit_dt_am)
+
+
+## Edit parfiles
+
+Edit:
+- proc: proc/parfile/<tag>.<period>.param.yml
+- windows windods/parfile/window.<period>.param.yml (Please check test example!)
+- adjoint adjoint/parfile/multitaper.adjoint_<misfit>.<period>.config.yml
+- weights weights/parfile/template.window_weights.param.yml
+- sum_adjoint sum_adjoint/parfile/sum_adjoint.param.yml
