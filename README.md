@@ -13,6 +13,14 @@ You can generate a script from the instructions below using
 `generate_run_script.sh`. Then you can run the created `run.sh` file.
 
 
+Get misfit type
+
+	$ misfit=$(grep ^misfit settings.yml | cut -d: -f2 | xargs)
+	$ misfit_prefix=${misfit/'misfit_'/}
+	$ echo "#########"
+	$ echo "misfit: "$misfit
+	$ echo "prefix: "$misfit_prefix
+	
 ## Setup
 
 First generate needed folders by
@@ -66,12 +74,12 @@ and then run the script
 
 Generate path files
 
-	$ python generate_path_files.py measure
+	$ python generate_path_files.py measure_all
 
 and then run the script
 
 	$ cd measure
-	$ ./run_measureadj.sh
+	$ ./run_measureadj_${misfit_prefix}.sh
 	$ cd ..
 
 
@@ -108,12 +116,12 @@ and then run the script
 
 Generate path files
 
-	$ python generate_path_files.py adjoint
+	$ python generate_path_files.py adjoint_all
 
 and then run the script
 
 	$ cd adjoint
-	$ ./run_pyadj_mt.sh
+	$ bash "run_pyadj_${misfit_prefix}.sh"
 	$ cd ..
 
 
@@ -122,18 +130,15 @@ and then run the script
 
 
 Generate param files (We need to count windows to generate these)
-
-	$ python generate_path_files.py weight_params
-
 Generate path files
 
-	$ python generate_path_files.py weight_paths
+	$ python generate_path_files.py weight_all
 
 
 and then run the script
 
 	$ cd weights
-	$ ./calc_weights.sh
+	$ bash "calc_weights_${misfit_prefix}.sh"
 	$ cd ..
 
 
@@ -142,7 +147,7 @@ and then run the script
 
 Generate path files
 
-	$ python generate_path_files.py sum
+	$ python generate_path_files.py sum_all
 
 and then run the script
 

@@ -1,0 +1,45 @@
+adjoint_config:
+  # adjoint source type
+  adj_src_type: "exponentiated_phase_misfit"
+
+  # min and max period(unit: second)
+  min_period: 90.0
+  max_period: 250.0
+
+  # adjoint config parameter
+  taper_percentage: 1.0
+  taper_type: 'cos_p10'
+  wtr_env: 0.10
+
+  # Measure type [ev: envelope ep: exponentiated phase]
+  measure_type: 'ep'
+
+process_config:
+  # for postprocessing adjoint sources
+  # interpolation. Starttime will be automatically set as cmt_time - 1.5 * hdur
+  # to fit the SPECFEM behaviour
+  interp_flag: True
+  interp_delta: 0.140000
+  interp_npts: 77300
+
+  # for sum multiple insturments, like "II.AAK.00.BHZ" and "II.AAK.10.BHZ". if you turn
+  # the weight_flag to be true, then you need also provide the weight_dict in the code
+  sum_over_comp_flag: False
+  weight_flag: False
+
+  # filter the adjoint source
+  filter_flag: False
+  pre_filt: [0.007273, 0.009091, 0.022222, 0.026667]
+
+  # taper
+  taper_type: 'hann'
+  taper_percentage: 0.05
+
+  # add missing components with zero trace(to prepare rotate)
+  # If set to False, only rotate those with Both "R" and "T"
+  # components. Set to True highly recommended unless you are
+  # sreu what you are doing
+  add_missing_comp_flag: True
+
+  # rotate the adjoint source
+  rotate_flag: False

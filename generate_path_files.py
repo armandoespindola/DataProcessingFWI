@@ -18,6 +18,7 @@ import os
 import json
 import yaml
 import subprocess
+from collections import defaultdict
 
 class FileOperator(object):
     """Documentation for FileOperator
@@ -164,7 +165,7 @@ class FileGenerator(FileOperator):
         for eventname in self.events:
             for period_band in self.settings["period_bands"]:
                 data = {
-                    "figure_mode": False,
+                    "figure_mode": True,
                     "obsd_asdf": self.f("proc_obsd", eventname, period_band),
                     "obsd_tag": self.settings["proc_obsd_tag"],
                     "output_file": self.f("windows_file", eventname, period_band),  # NOQA
@@ -174,7 +175,7 @@ class FileGenerator(FileOperator):
                 self.dump_json(data,
                                self.f("window_path", eventname, period_band))
 
-    def generate_measure(self):
+    def generate_measure(self,measure_file="measure_file",measure_path="measure_path"):
         for eventname in self.events:
             for period_band in self.settings["period_bands"]:
                 data = {
@@ -182,13 +183,30 @@ class FileGenerator(FileOperator):
                     "figure_mode": False,
                     "obsd_asdf": self.f("proc_obsd", eventname, period_band),
                     "obsd_tag": self.settings["proc_obsd_tag"],
-                    "output_file": self.f("measure_file", eventname, period_band),  # NOQA
+                    "output_file": self.f(measure_file, eventname, period_band),  # NOQA
                     "synt_asdf": self.f("proc_synt", eventname, period_band),
                     "synt_tag": self.settings["proc_synt_tag"],
                     "window_file": self.f("windows_file", eventname, period_band)  # NOQA
                 }
                 self.dump_json(data,
-                               self.f("measure_path", eventname, period_band))
+                               self.f(measure_path, eventname, period_band))
+
+    def generate_measure_all(self):
+        misfit_type = self.settings['misfit_type']
+        print_header("generate_measure_all\n"+misfit_type)
+        if misfit_type == "misfit_dt_am":
+            self.generate_measure(measure_path="measure_path")
+        elif misfit_type == "misfit_ep_ev":
+            self.generate_measure(measure_path="measure_path")
+            self.generate_measure(measure_file="measure_file_ep_ev",
+                                  measure_path="measure_path_ep_ev")
+        elif misfit_type == "misfit_ep" or misfit_type == "misfit_ev":
+            self.generate_measure(measure_path="measure_path")
+            self.generate_measure(measure_file="measure_file_hb",
+                                  measure_path="measure_path_hb")
+        else:
+            self.generate_measure()
+    
 
     def generate_stations(self):
         for eventname in self.events:
@@ -200,10 +218,22 @@ class FileGenerator(FileOperator):
                            self.f("stations_path", eventname))
 
     def generate_filter(self):
+        misfit_type = self.settings['misfit_type']
+        if misfit_type == "misfit_ep_ev":
+            measure_file = "measure_file_ep_ev"
+        elif misfit_type == "misfit_ev" or misfit_type == "misfit_ep":
+            measure_file = "measure_file_hb"
+        else:
+            measure_file = "measure_file"
+
+        if (misfit_type == "misfit_ep_ev" or misfit_type == "misfit_ep" or
+            misfit_type == "misfit_ev"):
+            self.generate_combine_measurements(measure_file=measure_file)
+                
         for eventname in self.events:
             for period_band in self.settings["period_bands"]:
                 data = {
-                    "measurement_file": self.f("measure_file", eventname, period_band),  # NOQA
+                    "measurement_file": self.f(measure_file, eventname, period_band),  # NOQA
                     "output_file": self.f("windows_filter_file", eventname, period_band),  # NOQA
                     "station_file": self.f("stations_file", eventname),
                     "window_file": self.f("windows_file", eventname, period_band)  # NOQA
@@ -261,7 +291,7 @@ class FileGenerator(FileOperator):
                 self.dump_json(data,
                                self.f("adjoint_path_am", eventname, period_band))
 
-    def generate_adjoint_dt_q(self):
+    def generate_adjoint_ep(self):
         for eventname in self.events:
             for period_band in self.settings["period_bands"]:
                 data = {
@@ -269,16 +299,15 @@ class FileGenerator(FileOperator):
                     "figure_mode": False,
                     "obsd_asdf": self.f("proc_obsd", eventname, period_band),
                     "obsd_tag": self.settings["proc_obsd_tag"],
-                    "output_file": self.f("adjoint_file_dt_q", eventname, period_band),  # NOQA
+                    "output_file": self.f("adjoint_file_ep", eventname, period_band),  # NOQA
                     "synt_asdf": self.f("proc_synt", eventname, period_band),
                     "synt_tag": self.settings["proc_synt_tag"],
                     "window_file": self.f("windows_filter_file", eventname, period_band)  # NOQA
                 }
                 self.dump_json(data,
-                               self.f("adjoint_path_dt_q", eventname, period_band))
+                               self.f("adjoint_path_ep", eventname, period_band))
 
-
-    def generate_adjoint_am_q(self):
+    def generate_adjoint_ev(self):
         for eventname in self.events:
             for period_band in self.settings["period_bands"]:
                 data = {
@@ -286,16 +315,17 @@ class FileGenerator(FileOperator):
                     "figure_mode": False,
                     "obsd_asdf": self.f("proc_obsd", eventname, period_band),
                     "obsd_tag": self.settings["proc_obsd_tag"],
-                    "output_file": self.f("adjoint_file_am_q", eventname, period_band),  # NOQA
+                    "output_file": self.f("adjoint_file_ev", eventname, period_band),  # NOQA
                     "synt_asdf": self.f("proc_synt", eventname, period_band),
                     "synt_tag": self.settings["proc_synt_tag"],
                     "window_file": self.f("windows_filter_file", eventname, period_band)  # NOQA
                 }
                 self.dump_json(data,
-                               self.f("adjoint_path_am_q", eventname, period_band))
+                               self.f("adjoint_path_ev", eventname, period_band))
 
 
-    def get_dt_and_am_weights(self):
+    def get_combine_weights(self,misfit1="misfit_dt",misfit2="misfit_dlna",
+                            measure_file="measure_file"):
         from tqdm import tqdm
         total_dt_misfit = 0.0
         total_amp_misfit = 0.0
@@ -303,25 +333,27 @@ class FileGenerator(FileOperator):
                     desc="Computing raw total misfits")
         for per_band in self.settings["period_bands"]:
             for eventname in self.events:
-                measurements = self.load_json(self.f("measure_file",
+                measurements = self.load_json(self.f(measure_file,
                                        eventname, per_band)).items()
                 for sta, sta_meas in measurements:
                     for comp, comp_meas in sta_meas.items():
                         for meas in comp_meas:
-                            total_dt_misfit += meas["misfit_dt"]
-                            total_amp_misfit += meas["misfit_dlna"]
+                            total_dt_misfit += meas[misfit1]
+                            total_amp_misfit += meas[misfit2]
                             pbar.update()
 
-        print(" (DT,AM) Total Misfit : ",total_dt_misfit,total_amp_misfit)
+        print(" ({},{}) Total Misfit : ".format(misfit1,misfit2)
+              ,total_dt_misfit,total_amp_misfit)
         total_misfit = total_dt_misfit + total_amp_misfit
         weight_tt = total_amp_misfit/total_misfit
         weight_amp = total_dt_misfit/total_misfit
-        print(" (DT,AM) Weights Misfit : ",weight_tt,weight_amp)
+        print(" ({},{}) Weights Misfit : ".format(misfit1,misfit2)
+              ,weight_tt,weight_amp)
         return weight_tt, weight_amp
 
 
 
-    def generate_misfit_main(self,file_weight,misfit_type):
+    def generate_misfit_main(self,file_weight,misfit_type,measure_file="measure_file"):
         from tqdm import tqdm
         # Read Weights
         weight = {}
@@ -335,10 +367,10 @@ class FileGenerator(FileOperator):
         total_misfit = 0.0
         
         pbar = tqdm(total=len(self.settings["period_bands"]*len(self.events)),
-                    desc="Computing raw total misfits")
+                    desc="Computing weighted total misfits")
         for per_band in self.settings["period_bands"]:
             for eventname in self.events:
-                measurements = self.load_json(self.f("measure_file",
+                measurements = self.load_json(self.f(measure_file,
                                        eventname, per_band)).items()
                 for sta, sta_meas in measurements:
                     for comp, comp_meas in sta_meas.items():
@@ -361,14 +393,162 @@ class FileGenerator(FileOperator):
         return total_misfit
 
 
+    def generate_histogram(self,par=dict()):
+        from tqdm import tqdm
+        import matplotlib
+        import matplotlib.pyplot as plt
+        matplotlib.use('Agg')
+        
+        if "path" in par.keys():
+            path = par['path']
+        else:
+            path = "./"
+
+        if "bins" in par.keys():
+            bins = par['bins']
+        else:
+            bins = 10
+        misfit_type = self.settings['misfit_type']
+        if misfit_type == "misfit_dt_am":
+            misfits = ['dt','dlna']
+        elif misfit_type == "misfit_ep_ev":
+            misfits = ['ep','ev']
+        elif misfit_type == "misfit_dt":
+            misfits = ['dt']
+        elif misfit_type == "misfit_am":
+            misfits = ['dlna']
+        elif misfit_type == "misfit_ep":
+            misfits = ['ep']
+        elif misfit_type == "misfit_ev":
+            misfits = ['ev']
+        else:
+            print("Misfit not defined")
+            exit()
+            
+        misfit = {p: {c: 0.0 for c in "RTZ"} for p in self.settings['period_bands']}
+        histogram = defaultdict(lambda : defaultdict(list))
+
+        for imisfit in misfits:
+            pbar = tqdm(total=len(self.settings["period_bands"]*len(self.events)),
+                        desc="Computing Histogram")
+            for per_band in self.settings["period_bands"]:
+                for eventname in self.events:
+                    file_dat = self.f("measure_file",eventname
+                                  ,per_band).split("measure/")[1]
+                    measurements = self.load_json(path + "measure/"+file_dat).items()
+                    for sta, sta_meas in measurements:
+                        for comp, comp_meas in sta_meas.items():
+                            c = comp[-1]
+                            for meas in comp_meas:
+                                histogram[per_band][c].append(meas[imisfit])
+                                pbar.update()
+
+            for per_band in self.settings["period_bands"]:
+                comp="RTZ"
+                colors=['red','blue','green']
+                fig, axs = plt.subplots(1, 3,figsize=(9,3))
+                for c in range(0,3):
+                    axs[c].hist(histogram[per_band][comp[c]],color=colors[c],ec='black',
+                                bins=bins)
+                    axs[c].set_title("Component: {}".format(comp[c]),fontsize=8)
+                    fig.suptitle("Misfit: {} Period: {}".format(imisfit,per_band),fontsize=8)
+                    for item in ([axs[c].title, axs[c].xaxis.label, axs[c].yaxis.label] +
+                                 axs[c].get_xticklabels() + axs[c].get_yticklabels()):
+                        item.set_fontsize(8)
+                plt.savefig("hist_"+per_band+"_"+imisfit+".png",dpi=300)
+            histogram.clear()
+
+
+
+    def generate_histogram_window(self,par=dict()):
+        from tqdm import tqdm
+        import matplotlib
+        import matplotlib.pyplot as plt
+        matplotlib.use('Agg')
+        
+        if "path" in par.keys():
+            path = par['path']
+        else:
+            path = "./"
+
+        if "bins" in par.keys():
+            bins = par['bins']
+        else:
+            bins = 10
+            
+        print(path)
+        misfit_type = self.settings['misfit_type']
+        if misfit_type == "misfit_dt_am":
+            misfits = ['cc_shift_in_seconds','dlnA']
+        elif misfit_type == "misfit_ep_ev":
+            misfits = ['ep','ev']
+        elif misfit_type == "misfit_dt":
+            misfits = ['cc_shift_in_seconds']
+        elif misfit_type == "misfit_am":
+            misfits = ['dlnA']
+        elif misfit_type == "misfit_ep":
+            misfits = ['ep']
+        elif misfit_type == "misfit_ev":
+            misfits = ['ev']
+        else:
+            print("Misfit not defined")
+            exit()
+            
+        misfit = {p: {c: 0.0 for c in "RTZ"} for p in self.settings['period_bands']}
+        histogram = defaultdict(lambda : defaultdict(list))
+
+        for imisfit in misfits:
+            pbar = tqdm(total=len(self.settings["period_bands"]*len(self.events)),
+                        desc="Computing Histogram")
+            for per_band in self.settings["period_bands"]:
+                for eventname in self.events:
+                    file_dat = self.f("windows_filter_file",eventname
+                                  ,per_band).split("windows/")[1]
+                    measurements = self.load_json(path + "windows/"+file_dat).items()
+                    for sta, sta_meas in measurements:
+                        for comp, comp_meas in sta_meas.items():
+                            c = comp[-1]
+                            for meas in comp_meas:
+                                histogram[per_band][c].append(meas[imisfit])
+                                pbar.update()
+
+            for per_band in self.settings["period_bands"]:
+                comp="RTZ"
+                colors=['red','blue','green']
+                fig, axs = plt.subplots(1, 3,figsize=(9,3))
+                for c in range(0,3):
+                    axs[c].hist(histogram[per_band][comp[c]],color=colors[c],ec='black',
+                                bins=bins)
+                    axs[c].set_title("Component: {}".format(comp[c]),fontsize=8)
+                    if imisfit == "cc_shift_in_seconds":
+                        imisfit = "dt"
+                    fig.suptitle("Misfit: {} Period: {}".format(imisfit,per_band),fontsize=8)
+                    for item in ([axs[c].title, axs[c].xaxis.label, axs[c].yaxis.label] +
+                                 axs[c].get_xticklabels() + axs[c].get_yticklabels()):
+                        item.set_fontsize(8)
+                plt.savefig("hist_"+per_band+"_"+imisfit+".png",dpi=300)
+            histogram.clear()
+
+
     def generate_misfit(self):
         misfit_type = self.settings['misfit_type']
         print(misfit_type)
-        misfit = self.generate_misfit_main('weight_file',misfit_type)
-        print("Total misfit ("  + misfit_type +  "): ",misfit)
-        f=open("fval",'w')
-        f.write("%f" % (misfit))
-        f.close()
+        if misfit_type == "misfit_dt_am":
+            self.generate_misfit_dt_am()
+        elif misfit_type == "misfit_ep_ev":
+            self.generate_misfit_ep_ev()
+        else:
+            if misfit_type == "misfit_ev" or misfit_type == "misfit_ep":
+                measure_file = "measure_file_hb"
+            else:
+                measure_file = "measure_file"
+                if misfit_type == "misfit_am":
+                    misfit_type = "misfit_dlna"
+            misfit = self.generate_misfit_main('weight_file',misfit_type,measure_file)
+            print("Total misfit ("  + misfit_type +  "): ",misfit)
+            f=open("fval",'w')
+            f.write("%f" % (misfit))
+            f.close()
 
     def generate_misfit_dt_am(self):
         misfit_dt = self.generate_misfit_main('weight_dt_file','misfit_dt')
@@ -379,16 +559,51 @@ class FileGenerator(FileOperator):
         f=open("fval",'w')
         f.write("%f" % (misfit_dt + misfit_am))
         f.close()
+
+    def generate_misfit_ep_ev(self):
+        misfit_ep = self.generate_misfit_main('weight_ep_file','misfit_ep',
+                                              measure_file = "measure_file_ep_ev")
+        print("Total misfit (misfit_ep): ",misfit_ep)
+        misfit_ev = self.generate_misfit_main('weight_ev_file','misfit_ev',
+                                              measure_file = "measure_file_ep_ev")
+        print("Total misfit (misfit_ev): ",misfit_ev)
+        print("Total misfit : ",misfit_ev + misfit_ep)
+        f=open("fval",'w')
+        f.write("%f" % (misfit_ev + misfit_ep))
+        f.close()
         
     def generate_weight_dt_and_am_params(self):
         template = self.load_yaml(self.f("weight_template"))
-        w_tt, w_amp = self.get_dt_and_am_weights()
+        w_tt, w_amp = self.get_combine_weights('misfit_dt','misfit_dlna')
+
+        print_header("Weights DT and AM")
+        print("w_dt: {} w_dlna: {}".format(w_tt,w_amp))
+        
         for eventname in self.events:
             ratio = self.get_ratio(eventname)
-            ratio = self.extend_ratio_to_dt_and_am(ratio, w_tt, w_amp)
+            ratio = self.extend_ratio_combine(ratio,tag_misfit1="dt",
+                                              tag_misfit2="am", w_tt=w_tt,
+                                              w_amp=w_amp)
             data = template.copy()
             data["category_weighting"]["ratio"] = ratio
             self.dump_yaml(data, self.f("weight_parfile_dt_am", eventname))
+
+            
+    def generate_weight_ep_and_ev_params(self):
+        template = self.load_yaml(self.f("weight_template"))
+        w_tt, w_amp = self.get_combine_weights('misfit_ep','misfit_ev',
+                                               "measure_file_ep_ev")
+
+        print_header("Weights EP and EV")
+        print("w_ep: {} w_ev: {}".format(w_tt,w_amp))
+        for eventname in self.events:
+            ratio = self.get_ratio(eventname)
+            ratio = self.extend_ratio_combine(ratio,tag_misfit1="ep",
+                                              tag_misfit2="ev", w_tt=w_tt,
+                                              w_amp=w_amp)
+            data = template.copy()
+            data["category_weighting"]["ratio"] = ratio
+            self.dump_yaml(data, self.f("weight_parfile_ep_ev", eventname))
 
 
     def generate_weight_dt_and_am_paths(self):
@@ -396,13 +611,13 @@ class FileGenerator(FileOperator):
             data = {"input": {},
                     "logfile": self.f("weight_log", eventname)}
             for period_band in self.settings["period_bands"]:
-                data["input"][period_band+"_DT"] = {
+                data["input"][period_band+"_dt"] = {
                     "asdf_file": self.f("proc_synt", eventname, period_band),
                     "output_file": self.f("weight_dt_file", eventname, period_band),
                     "station_file": self.f("stations_file", eventname),
                     "window_file": self.f("windows_filter_file", eventname, period_band)
                 }
-                data["input"][period_band+"_AM"] = {
+                data["input"][period_band+"_am"] = {
                     "asdf_file": self.f("proc_synt", eventname, period_band),
                     "output_file": self.f("weight_am_file", eventname, period_band),
                     "station_file": self.f("stations_file", eventname),
@@ -411,18 +626,39 @@ class FileGenerator(FileOperator):
 
             self.dump_json(data, self.f("weight_path_dt_am", eventname))
 
+    def generate_weight_ep_and_ev_paths(self):
+        for eventname in self.events:
+            data = {"input": {},
+                    "logfile": self.f("weight_log", eventname)}
+            for period_band in self.settings["period_bands"]:
+                data["input"][period_band+"_ep"] = {
+                    "asdf_file": self.f("proc_synt", eventname, period_band),
+                    "output_file": self.f("weight_ep_file", eventname, period_band),
+                    "station_file": self.f("stations_file", eventname),
+                    "window_file": self.f("windows_filter_file", eventname, period_band)
+                }
+                data["input"][period_band+"_ev"] = {
+                    "asdf_file": self.f("proc_synt", eventname, period_band),
+                    "output_file": self.f("weight_ev_file", eventname, period_band),
+                    "station_file": self.f("stations_file", eventname),
+                    "window_file": self.f("windows_filter_file", eventname, period_band)
+                }
 
-    def extend_ratio_to_dt_and_am(self,ratio, w_tt, w_amp):
+            self.dump_json(data, self.f("weight_path_ep_ev", eventname))
+
+
+    def extend_ratio_combine(self,ratio,tag_misfit1='dt',tag_misfit2="am",
+                             w_tt=1.0, w_amp=1.0):
         new_ratio = {}
         for p in self.settings["period_bands"]:
-            p_tt = p+"_DT"
-            p_amp = p+"_AM"
-            new_ratio[p_tt] = {}
-            new_ratio[p_amp] = {}
+            p_m1 = p+"_"+tag_misfit1
+            p_m2 = p+"_"+tag_misfit2
+            new_ratio[p_m1] = {}
+            new_ratio[p_m2] = {}
             #for c in ["BHR", "BHT", "BHZ"]:
             for c in self.settings['data_components']:
-                new_ratio[p_tt][c] = w_tt*ratio[p][c]
-                new_ratio[p_amp][c] = w_amp*ratio[p][c]
+                new_ratio[p_m1][c] = w_tt*ratio[p][c]
+                new_ratio[p_m2][c] = w_amp*ratio[p][c]
         return new_ratio
 
 
@@ -489,43 +725,91 @@ class FileGenerator(FileOperator):
             data = {"input_file": {},
                     "output_file": self.f("sum_adjoint_file", eventname)}
             for period_band in self.settings["period_bands"]:
-                data["input_file"][period_band+"_DT"] = {
+                data["input_file"][period_band+"_dt"] = {
                     "asdf_file": self.f("adjoint_file_dt", eventname, period_band),
                     "weight_file": self.f("weight_dt_file", eventname, period_band),
                 }
-                data["input_file"][period_band+"_AM"] = {
+                data["input_file"][period_band+"_am"] = {
                     "asdf_file": self.f("adjoint_file_am", eventname, period_band),
                     "weight_file": self.f("weight_am_file", eventname, period_band),
                 }
             self.dump_json(data, self.f("sum_adjoint_path", eventname))
 
-
-    def generate_sum_dt_am_q(self):
+    def generate_sum_ep_ev(self):
         for eventname in self.events:
             data = {"input_file": {},
-                    "output_file": self.f("sum_adjoint_file_q", eventname)}
+                    "output_file": self.f("sum_adjoint_file", eventname)}
             for period_band in self.settings["period_bands"]:
-                data["input_file"][period_band+"_DT"] = {
-                    "asdf_file": self.f("adjoint_file_dt_q", eventname, period_band),
-                    "weight_file": self.f("weight_dt_file", eventname, period_band),
+                data["input_file"][period_band+"_ep"] = {
+                    "asdf_file": self.f("adjoint_file_ep", eventname, period_band),
+                    "weight_file": self.f("weight_ep_file", eventname, period_band),
                 }
-                data["input_file"][period_band+"_AM"] = {
-                    "asdf_file": self.f("adjoint_file_am_q", eventname, period_band),
-                    "weight_file": self.f("weight_am_file", eventname, period_band),
+                data["input_file"][period_band+"_ev"] = {
+                    "asdf_file": self.f("adjoint_file_ev", eventname, period_band),
+                    "weight_file": self.f("weight_ev_file", eventname, period_band),
                 }
-            self.dump_json(data, self.f("sum_adjoint_path_q", eventname))
+            self.dump_json(data, self.f("sum_adjoint_path", eventname))
+
+
+    def generate_sum_all(self):
+        misfit_type = self.settings['misfit_type']
+        print_header("generate_sum\n"+misfit_type)
+        if misfit_type == "misfit_dt_am":
+            self.generate_sum_dt_am()
+        elif misfit_type == "misfit_ep_ev":
+            self.generate_sum_ep_ev()
+        else:
+            self.generate_sum()
+                
+
 
     def generate_weight_all(self):
-        self.generate_weight_dt_and_am_params()
-        self.generate_weight_dt_and_am_paths()
+        misfit_type = self.settings['misfit_type']
+        print_header("generate_weight\n"+misfit_type)
+        if misfit_type == "misfit_dt_am":
+            self.generate_weight_dt_and_am_params()
+            self.generate_weight_dt_and_am_paths()
+        elif misfit_type == "misfit_ep_ev":
+            self.generate_weight_ep_and_ev_params()
+            self.generate_weight_ep_and_ev_paths()
+        else:
+            self.generate_weight_params()
+            self.generate_weight_paths()
+            
+    def generate_combine_measurements(self,measure_file="measure_file_hb"):
+
+        for per_band in self.settings["period_bands"]:
+            for eventname in self.events:
+                measure_data_ep_ev = self.load_json(self.f(measure_file,
+                                                           eventname, per_band))
+                
+                measure_data = self.load_json(self.f("measure_file",
+                                                     eventname, per_band)).items()
+                for sta, sta_meas in measure_data:
+                    for comp, comp_meas in sta_meas.items():
+                        for meas in range(0,len(comp_meas)):
+                            measure_data_ep_ev[sta][comp][meas]["dlna"] = comp_meas[meas]["dlna"]
+                            measure_data_ep_ev[sta][comp][meas]["dt"] = comp_meas[meas]["dt"]
+
+                self.dump_json(measure_data_ep_ev,self.f(measure_file,
+                                                           eventname, per_band))
+                                
+
+        
+        
+        
 
     def generate_adjoint_all(self):
-        self.generate_adjoint_am()
-        self.generate_adjoint_dt()
-        
-    def generate_adjoint_q_all(self):
-        self.generate_adjoint_am_q()
-        self.generate_adjoint_dt_q()
+        misfit_type = self.settings['misfit_type']
+        print_header("generate_adjoint\n"+misfit_type)
+        if misfit_type == "misfit_dt_am":
+            self.generate_adjoint_dt()
+            self.generate_adjoint_am()
+        elif misfit_type == "misfit_ep_ev":
+            self.generate_adjoint_ep()
+            self.generate_adjoint_ev()
+        else:
+            self.generate_adjoint()
 
             
     def clean(self):
@@ -543,6 +827,7 @@ class FileGenerator(FileOperator):
         
 
     def run(self):
+        import json
         steps = dict([(x[9:], x) for x in dir(self)
                       if x.startswith('generate_')])
         steps["clean"] = "clean"
@@ -552,6 +837,7 @@ class FileGenerator(FileOperator):
         parser.add_argument('-p', '--paths-file', default="paths.yml")
         parser.add_argument('-s', '--settings-file', default="settings.yml")
         parser.add_argument('-e', '--events-file', default="event_list")
+        parser.add_argument('-par', '--parameters',type=json.loads,default=None)
         parser.add_argument("step",  help="file to generate",
                             choices=steps.keys())
         args = parser.parse_args()
@@ -559,8 +845,19 @@ class FileGenerator(FileOperator):
         self.settings = self.load_yaml(args.settings_file)
         self.events = self.load_events(args.events_file)
 
-        getattr(self, steps[args.step])()
+        if args.parameters == None:
+            getattr(self, steps[args.step])()
+        else:
+            getattr(self, steps[args.step])(args.parameters)
 
+
+def print_header(title=""):
+    print(10*"#")
+    print(10*"#")
+    print(title)
+    print(10*"#")
+    print(10*"#")
+    
 
 if __name__ == '__main__':
     FileGenerator().run()

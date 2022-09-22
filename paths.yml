@@ -50,12 +50,18 @@
           path: "paths"
           files:
             - measure_path: "measure.{eventname}.{period_band}.path.json"
+            - measure_path_ep_ev: "measure_ep_ev.{eventname}.{period_band}.path.json"
+            - measure_path_hb: "measure_hb.{eventname}.{period_band}.path.json"
       - measure_figures: "figures"
       - measure_output:
           path: "output"
           files:
             - measure_file: "measure.{eventname}.{period_band}.json"
+            - measure_file_ep_ev: "measure.{eventname}.ep_ev.{period_band}.json"
+            - measure_file_hb: "measure.{eventname}.hb.{period_band}.json"
             - measure_file_filter: "measure.{eventname}.{period_band}.json.filter"
+            - measure_file_hb_filter: "measure.{eventname}.hb.{period_band}.json.filter"
+            - measure_file_ep_ev_filter: "measure.{eventname}.ep_ev.{period_band}.json.filter"
 - adjoint:
     subfolders:
       - adjoint_paths:
@@ -66,6 +72,10 @@
             - adjoint_path_am: "adjoint_am.{eventname}.{period_band}.path.json"
             - adjoint_path_dt_q: "adjoint_dt_q.{eventname}.{period_band}.path.json"
             - adjoint_path_am_q: "adjoint_am_q.{eventname}.{period_band}.path.json"
+            - adjoint_path_ep: "adjoint_ep.{eventname}.{period_band}.path.json"
+            - adjoint_path_ev: "adjoint_ev.{eventname}.{period_band}.path.json"
+            - adjoint_path_ep_q: "adjoint_ep_q.{eventname}.{period_band}.path.json"
+            - adjoint_path_ev_q: "adjoint_ev_q.{eventname}.{period_band}.path.json"
       - adjoint_figures: "figures"
       - adjoint_output:
           path: "output"
@@ -75,6 +85,10 @@
             - adjoint_file_am: "adjoint_am.{eventname}.{period_band}.h5"
             - adjoint_file_dt_q: "adjoint_dt_q.{eventname}.{period_band}.h5"
             - adjoint_file_am_q: "adjoint_am_q.{eventname}.{period_band}.h5"
+            - adjoint_file_ep: "adjoint_ep.{eventname}.{period_band}.h5"
+            - adjoint_file_ev: "adjoint_ev.{eventname}.{period_band}.h5"
+            - adjoint_file_ep_q: "adjoint_ep_q.{eventname}.{period_band}.h5"
+            - adjoint_file_ev_q: "adjoint_ev_q.{eventname}.{period_band}.h5"
 
 - stations:
     subfolders:
@@ -102,11 +116,13 @@
             - weight_template: "template.window_weights.param.yml"
             - weight_parfile: "window_weights.{eventname}.param.yml"
             - weight_parfile_dt_am: "window_weights_dt_am.{eventname}.param.yml"
+            - weight_parfile_ep_ev: "window_weights_ep_ev.{eventname}.param.yml"
       - weight_paths:
           path: "paths"
           files:
             - weight_path: "window_weights.{eventname}.path.json"
             - weight_path_dt_am: "window_weights_dt_am.{eventname}.path.json"
+            - weight_path_ep_ev: "window_weights_ep_ev.{eventname}.path.json"
       - weight_output:
           path: "output"
           subfolders:
@@ -121,6 +137,8 @@
                   - weight_file: "window_weights.{period_band}.json"
                   - weight_dt_file: "window_weights.dt.{period_band}.json"
                   - weight_am_file: "window_weights.am.{period_band}.json"
+                  - weight_ep_file: "window_weights.ep.{period_band}.json"
+                  - weight_ev_file: "window_weights.ev.{period_band}.json"
 
 - sum_adjoint:
     subfolders:

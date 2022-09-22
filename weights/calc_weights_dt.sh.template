@@ -1,0 +1,39 @@
+#!/bin/bash
+#SBATCH --job-name=weights
+#SBATCH --account=:account:
+#SBATCH --exclusive
+#SBATCH --export=ALL
+#SBATCH --nodes=:nodes:
+#SBATCH --ntasks=:nproc:
+#SBATCH --time=:time:
+#SBATCH --partition=:partition:
+#SBATCH --array=:array:
+#SBATCH --gres=:gres:
+#SBATCH --output=output_:job_id:.o
+
+
+STARTTIME=$(date +%s)
+echo "start time is : $(date +"%T")"
+
+export gen="python ../generate_path_files.py -p ../paths.yml -s ../settings.yml -e ../event_list"
+
+events=`$gen list_events`
+
+for e in $events
+do
+   mpirun -np 1 pypaw-window_weights \
+		-p parfile/window_weights.$e.param.yml \
+		-f paths/window_weights.$e.path.json \
+		-v
+
+   if [ $? -ne 0 ]; then exit 1; fi
+   
+done
+
+ENDTIME=$(date +%s)
+Ttaken=$(($ENDTIME - $STARTTIME))
+echo
+echo "finish time is : $(date +"%T")"
+echo "RUNTIME is :  $(($Ttaken / 3600)) hours ::  $(($(($Ttaken%3600))/60)) minutes  :: $(($Ttaken % 60)) seconds."
+
+

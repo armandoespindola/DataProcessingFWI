@@ -10,6 +10,8 @@ nproc=$2
 narray=$3
 verbose=$4
 
+misfit=$(grep ^misfit settings.yml | cut -d: -f2 | xargs)
+misfit_prefix=${misfit/'misfit_'/}
 
 if [ -z "$verbose" ]; then
     verbose=0
@@ -27,13 +29,11 @@ fi
 templates=("converter/convert_to_asdf.sh.template"
            "proc/run_preprocessing.sh.template"
            "windows/select_windows.sh.template"
-           "measure/run_measureadj.sh.template"
+           "measure/run_measureadj_${misfit_prefix}.sh.template"
            "stations/extract_stations.sh.template"
            "filter/filter_windows.sh.template"
-           "adjoint/run_pyadj_mt.sh.template"
-	   "adjoint/run_pyadj_mt_dt_am.sh.template"
-           "weights/calc_weights.sh.template"
-	   "weights/calc_weights_dt_am.sh.template"
+           "adjoint/run_pyadj_${misfit_prefix}.sh.template"
+	   "weights/calc_weights_${misfit_prefix}.sh.template"
            "sum_adjoint/sum_adjoint.sh.template")
 
 for template in "${templates[@]}"

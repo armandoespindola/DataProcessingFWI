@@ -14,4 +14,4 @@ proc_synt_tag: proc_synt
 
 # Misfit type to compute misfit evaluation
 # for line search
-misfit_type: misfit_dt 
+misfit_type: misfit_ep
