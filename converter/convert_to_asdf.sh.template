@@ -6,10 +6,9 @@
 #SBATCH --export=ALL
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=01:00:00
-#SBATCH --partition=m100_usr_preempt
-#SBATCH --output=output_%a.o
-#SBATCH --error=output_error_%a.o
+#SBATCH --time=:time:
+#SBATCH --partition=:partition:
+#SBATCH --output=output_:job_id:.o
 
 STARTTIME=$(date +%s)
 echo "start time is : $(date +"%T")"

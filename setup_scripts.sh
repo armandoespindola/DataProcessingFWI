@@ -26,7 +26,7 @@ function create_sbatch(){
 
     if [ -z $PARTITION ]; then sed -i "/.*partition.*/d" ${target}.sh
     else
-	sed -i "s/:partition:/PARTITION/g" ${target}.sh
+	sed -i "s/:partition:/$PARTITION/g" ${target}.sh
     fi
 
 
