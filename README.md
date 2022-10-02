@@ -20,7 +20,7 @@ Get misfit type
 	$ echo "#########"
 	$ echo "misfit: "$misfit
 	$ echo "prefix: "$misfit_prefix
-	$ bash setup_scripts.sh "" 2 "" 1
+	$ bash setup_scripts.sh "" 2 "" "" "" "" "mpirun -n" 1
 	
 ## Setup
 

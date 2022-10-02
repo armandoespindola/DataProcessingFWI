@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 #SBATCH --job-name=convert_to_asdf
 #SBATCH --account=:account:
 #SBATCH --array=:array:
