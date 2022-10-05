@@ -105,7 +105,7 @@ if mpi.is_main_rank:
     output_ds = pyasdf.ASDFDataSet(output_asdf, mpi=False, mode="a")
     output_ds.events = input_ds.events
     write_output(output_ds, results)
-    del output_ds
+    output_ds._close()
     # pbar = tqdm(total=len(results), desc="Writing")
     for i in range(1, mpi.size):
         mpi.comm.send(True, dest=i)
@@ -115,7 +115,7 @@ else:
     mpi.comm.recv(source=0)
     output_ds = pyasdf.ASDFDataSet(output_asdf, mpi=False, mode="a")
     write_output(output_ds, results)
-    del output_ds
+    output_ds._close()
     mpi.comm.send(True, dest=0)
 
 

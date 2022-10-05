@@ -165,7 +165,7 @@ class FileGenerator(FileOperator):
         for eventname in self.events:
             for period_band in self.settings["period_bands"]:
                 data = {
-                    "figure_mode": True,
+                    "figure_mode": False,
                     "obsd_asdf": self.f("proc_obsd", eventname, period_band),
                     "obsd_tag": self.settings["proc_obsd_tag"],
                     "output_file": self.f("windows_file", eventname, period_band),  # NOQA
@@ -433,9 +433,14 @@ class FileGenerator(FileOperator):
                         desc="Computing Histogram")
             for per_band in self.settings["period_bands"]:
                 for eventname in self.events:
-                    file_dat = self.f("measure_file",eventname
-                                  ,per_band).split("measure/")[1]
-                    measurements = self.load_json(path + "measure/"+file_dat).items()
+                    if path == './':
+                        file_dat = self.f("windows_filter_file",eventname
+                                  ,per_band)
+                    else:
+                        file_dat = self.f("windows_filter_file",eventname
+                                          ,per_band).split("output/")[1]
+                        file_dat = path + file_dat
+                    measurements = self.load_json(file_dat).items()
                     for sta, sta_meas in measurements:
                         for comp, comp_meas in sta_meas.items():
                             c = comp[-1]
@@ -455,7 +460,7 @@ class FileGenerator(FileOperator):
                     for item in ([axs[c].title, axs[c].xaxis.label, axs[c].yaxis.label] +
                                  axs[c].get_xticklabels() + axs[c].get_yticklabels()):
                         item.set_fontsize(8)
-                plt.savefig("hist_"+per_band+"_"+imisfit+".png",dpi=300)
+                plt.savefig(path + "hist_"+per_band+"_"+imisfit+".png",dpi=300)
             histogram.clear()
 
 
@@ -502,9 +507,14 @@ class FileGenerator(FileOperator):
                         desc="Computing Histogram")
             for per_band in self.settings["period_bands"]:
                 for eventname in self.events:
-                    file_dat = self.f("windows_filter_file",eventname
-                                  ,per_band).split("windows/")[1]
-                    measurements = self.load_json(path + "windows/"+file_dat).items()
+                    if path == './':
+                        file_dat = self.f("windows_filter_file",eventname
+                                  ,per_band)
+                    else:
+                        file_dat = self.f("windows_filter_file",eventname
+                                          ,per_band).split("output/")[1]
+                        file_dat = path + file_dat
+                    measurements = self.load_json(file_dat).items()
                     for sta, sta_meas in measurements:
                         for comp, comp_meas in sta_meas.items():
                             c = comp[-1]
@@ -526,7 +536,7 @@ class FileGenerator(FileOperator):
                     for item in ([axs[c].title, axs[c].xaxis.label, axs[c].yaxis.label] +
                                  axs[c].get_xticklabels() + axs[c].get_yticklabels()):
                         item.set_fontsize(8)
-                plt.savefig("hist_"+per_band+"_"+imisfit+".png",dpi=300)
+                plt.savefig(path + "hist_"+per_band+"_"+imisfit+".png",dpi=300)
             histogram.clear()
 
 
@@ -549,6 +559,44 @@ class FileGenerator(FileOperator):
             f=open("fval",'w')
             f.write("%f" % (misfit))
             f.close()
+
+
+
+    def generate_raw_misfit(self,par=dict()):
+        if "path" in par.keys():
+            path = par['path']
+        else:
+            path= './'            
+        misfit_type = self.settings['misfit_type']
+        misfit_types = misfit_type.split("_")[1:]
+        misfit = {im: {p: {c: 0.0 for c in self.settings['data_components']} for p in self.settings['period_bands']} for im in misfit_types}
+        
+        for eventname in self.events:
+            if path == './':
+                file_misfit = self.f("sum_adjoint_file",eventname).split(".h5")[0] + ".adjoint.misfit.json"
+            else:
+                file_misfit = self.f("sum_adjoint_file",eventname).split(".h5")[0] + ".adjoint.misfit.json"
+                file_misfit  = path + file_misfit.split('output/')[1]
+            measurement = self.load_json(file_misfit).items() 
+            for period,component in measurement:
+                if len(misfit_types) > 1:
+                    period_band = period.split("_")[0]
+                    misfit_suff = period.split("_")[1]
+                else:
+                    period_band = period
+                    misfit_suff = misfit_type.split('_')[1]
+                for comp,comp_meas in component.items():
+#                    print(misfit_suff,period_band,comp,comp_meas['raw_misfit'])
+                    misfit[misfit_suff][period_band][comp] += \
+                        comp_meas['raw_misfit']
+
+            for period_band in self.settings['period_bands']:
+                    for imisfit in misfit_types:
+                        f = open(path + "misfit_{}.{}".format(imisfit,period_band),'w')
+                        for component in self.settings['data_components']:
+                            f.write("{} : {}\n".format(component,misfit[imisfit][period_band][component]))
+                        f.close()
+                        
 
     def generate_misfit_dt_am(self):
         misfit_dt = self.generate_misfit_main('weight_dt_file','misfit_dt')

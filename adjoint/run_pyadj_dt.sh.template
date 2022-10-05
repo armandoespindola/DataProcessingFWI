@@ -26,7 +26,7 @@ do
     for p in $periods
     do
 		mpirun -np :nproc: pypaw-adjoint_asdf \
-			-p ./parfile/multitaper.adjoint.$p.config.yml \
+			-p ./parfile/multitaper.adjoint_dt.$p.config.yml \
 			-f ./paths/adjoint.$e.$p.path.json \
 			-r 1.0 \
 			-v
