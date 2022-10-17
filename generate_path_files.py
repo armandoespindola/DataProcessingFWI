@@ -411,16 +411,22 @@ class FileGenerator(FileOperator):
         misfit_type = self.settings['misfit_type']
         if misfit_type == "misfit_dt_am":
             misfits = ['dt','dlna']
+            measure_file = "measure_file"
         elif misfit_type == "misfit_ep_ev":
             misfits = ['ep','ev']
+            measure_file = "measure_file_hb"
         elif misfit_type == "misfit_dt":
             misfits = ['dt']
+            measure_file = "measure_file"
         elif misfit_type == "misfit_am":
             misfits = ['dlna']
+            measure_file = "measure_file"
         elif misfit_type == "misfit_ep":
-            misfits = ['ep']
+            misfits = ['ep','dt']
+            measure_file = "measure_file_hb"
         elif misfit_type == "misfit_ev":
-            misfits = ['ev']
+            misfits = ['diff_ev','dlna']
+            measure_file = "measure_file_hb"
         else:
             print("Misfit not defined")
             exit()
@@ -434,10 +440,10 @@ class FileGenerator(FileOperator):
             for per_band in self.settings["period_bands"]:
                 for eventname in self.events:
                     if path == './':
-                        file_dat = self.f("windows_filter_file",eventname
+                        file_dat = self.f(measure_file,eventname
                                   ,per_band)
                     else:
-                        file_dat = self.f("windows_filter_file",eventname
+                        file_dat = self.f(measure_file,eventname
                                           ,per_band).split("output/")[1]
                         file_dat = path + file_dat
                     measurements = self.load_json(file_dat).items()
@@ -557,7 +563,7 @@ class FileGenerator(FileOperator):
             misfit = self.generate_misfit_main('weight_file',misfit_type,measure_file)
             print("Total misfit ("  + misfit_type +  "): ",misfit)
             f=open("fval",'w')
-            f.write("%f" % (misfit))
+            f.write("%.4e" % (misfit))
             f.close()
 
 
@@ -605,7 +611,7 @@ class FileGenerator(FileOperator):
         print("Total misfit (misfit_dlna): ",misfit_am)
         print("Total misfit : ",misfit_am + misfit_dt)
         f=open("fval",'w')
-        f.write("%f" % (misfit_dt + misfit_am))
+        f.write("%.4e" % (misfit_dt + misfit_am))
         f.close()
 
     def generate_misfit_ep_ev(self):
@@ -617,7 +623,7 @@ class FileGenerator(FileOperator):
         print("Total misfit (misfit_ev): ",misfit_ev)
         print("Total misfit : ",misfit_ev + misfit_ep)
         f=open("fval",'w')
-        f.write("%f" % (misfit_ev + misfit_ep))
+        f.write("%.4e" % (misfit_ev + misfit_ep))
         f.close()
         
     def generate_weight_dt_and_am_params(self):

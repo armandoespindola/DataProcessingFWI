@@ -35,7 +35,7 @@ class Bracket(Base):
         if step_count == 0 and update_count == 0:
             # based on idea from Dennis and Schnabel
             #alpha = gtg[-1]**-1
-            alpha = x[0]
+            alpha = self.step_len_max * 0.5
             status = 0
 
         elif step_count == 0:

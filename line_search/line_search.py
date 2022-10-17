@@ -69,7 +69,7 @@ alpha,status =line_search.initialize(step_len=args.step,
 
 
 f=open("alpha","w")
-f.write("%f" % (alpha))
+f.write("%.4e" % (alpha))
 f.close()
     
 f=open("status","w")
@@ -83,7 +83,7 @@ while status== 0:
     print(alpha,status)
 
     f=open("alpha","w")
-    f.write("%f" % (alpha))
+    f.write("%.4e" % (alpha))
     f.close()
     
     f=open("status","w")
