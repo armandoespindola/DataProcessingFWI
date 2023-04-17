@@ -174,6 +174,7 @@ Modify:
 Edit:
 - proc: proc/parfile/<tag>.<period>.param.yml
 - windows windows/parfile/window.<period>.param.yml (Please check test example!)
+- measure/run_measureadj_<misfit>.<period>.sh.template
 - adjoint adjoint/parfile/multitaper.adjoint_<misfit>.<period>.config.yml
 - weights weights/parfile/template.window_weights.param.yml
 - sum_adjoint sum_adjoint/parfile/sum_adjoint.param.yml

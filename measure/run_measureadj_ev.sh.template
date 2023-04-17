@@ -29,7 +29,7 @@ do
 			-v
 
 		mpirun -np :nproc: pypaw-measure_adjoint_asdf \
-			-p ../adjoint/parfile/hilbert.adjoint.$p.config.yml \
+			-p ../adjoint/parfile/hilbert.adjoint_ev.$p.config.yml \
 			-f ./paths/measure_hb.$e.$p.path.json \
 			-v
 		
