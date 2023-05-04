@@ -211,11 +211,22 @@ class FileGenerator(FileOperator):
     def generate_stations(self):
         for eventname in self.events:
             data = {
+                #"input_asdf": self.f("raw_obsd", eventname),
                 "input_asdf": self.f("raw_synt", eventname),
                 "outputfile": self.f("stations_file", eventname),
             }
             self.dump_json(data,
                            self.f("stations_path", eventname))
+
+
+    def generate_listwindows(self):
+        for ievent in self.events:
+            measurements = self.count_windows(ievent)
+            for period_band in self.settings["period_bands"]:
+                nwin = 0
+                for c in self.settings['data_components']:
+                    nwin += measurements[period_band][c]
+                print("{} : {} : {}".format(ievent,period_band,nwin))
 
     def generate_filter(self):
         misfit_type = self.settings['misfit_type']
@@ -739,7 +750,7 @@ class FileGenerator(FileOperator):
                 if counts[p][c] != 0:
                     counts[p][c] = 1 / counts[p][c]
                 else:
-                    counts[p][c] = 0
+                    counts[p][c] = 1.0
         return counts
 
     def generate_weight_params(self):
