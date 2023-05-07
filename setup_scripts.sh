@@ -91,6 +91,7 @@ echo "#########"
 
 templates=("converter/convert_to_asdf.sh.template"
            "proc/run_preprocessing.sh.template"
+	   "proc/run_preprocessing_cmt.sh.template"
            "windows/select_windows.sh.template"
            "measure/run_measureadj_${misfit_prefix}.sh.template"
            "stations/extract_stations.sh.template"

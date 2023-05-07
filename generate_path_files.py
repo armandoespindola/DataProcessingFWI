@@ -146,6 +146,35 @@ class FileGenerator(FileOperator):
                                self.f("{}_converter_path".format(seis_type),
                                       eventname))
 
+    def generate_proc_cmt(self):
+        for eventname in self.events:
+            for period_band in self.settings["period_bands"]:
+                for seis_type in ["obsd", "synt"]:
+                    if seis_type == "obsd":
+                        data = {
+                            "input_asdf": self.f("raw_"+seis_type, eventname),
+                            "input_tag": self.settings["raw_{}_tag".format(seis_type)],  # NOQA
+                            "output_asdf": self.f("proc_"+seis_type,
+                                              eventname, period_band),
+                            "output_tag": self.settings["proc_{}_tag".format(seis_type)]  # NOQA
+                        }
+                        self.dump_json(data,
+                                       self.f("{}_proc_path".format(seis_type),
+                                              eventname, period_band))
+                    elif seis_type == "synt":
+                        for imt in ["Mrr","Mtt","Mpp","Mrp","Mrt","Mtp","dep"]:
+                            data = {
+                                "input_asdf": self.f("raw_"+seis_type, eventname) + "." + imt,
+                                "input_tag": self.settings["raw_{}_tag".format(seis_type)],  # NOQA
+                                "output_asdf": self.f("proc_"+seis_type,
+                                                      eventname, period_band) + "." + imt,
+                                "output_tag": self.settings["proc_{}_tag".format(seis_type)]  # NOQA
+                            }
+                            self.dump_json(data,
+                                           self.f("{}_proc_path".format(seis_type),
+                                                  eventname, period_band + "." + imt))
+                    
+
     def generate_proc(self):
         for eventname in self.events:
             for period_band in self.settings["period_bands"]:
